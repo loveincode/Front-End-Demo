@@ -1,0 +1,285 @@
+@import "util.scss";
+
+.ui-searchbar-wrap {
+	position: fixed;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	z-index: 99;
+	~ .ui-container {
+		padding-top: 74px;
+	}
+}
+.senic-list {
+	ul {
+		padding: 5px 10px;
+		li {
+			display: block;
+			padding: 10px 0;
+			border-bottom: 1px solid #d1d1d1;
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+}
+
+.senic-box {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: start;
+	-webkit-box-align: center;
+	.img {
+		-webkit-box-flex: 0;
+		width: 80px;
+		height: 80px;
+		margin-right: 10px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.info {
+		-webkit-box-flex: 1;
+		> * {
+			line-height: 1em;
+			margin-bottom: 7px;
+			min-height: 1em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		h4 {
+			font-size: $ts3;
+			color: $tc1;
+		}
+		.tag {
+			padding: 2px 6px;
+			margin-right: 8px;
+			color: $blue;
+			font-size: $ts4;
+			line-height: 20px;
+			height: 20px;
+			@include border(1px, solid, $blue);
+		}
+		.pointer {
+			color: $green;
+			font-size: $ts3;
+			font-weight: bold;
+		}
+		p {
+			font-size: $ts4;
+			color: $tc2;
+			&.distance {
+				color: $tc3;
+			}
+		}
+	}
+	.price {
+		-webkit-box-flex: 0;
+ 		text-align: right;
+ 		.ori {
+ 			font-size: $ts4;
+ 			color: $tc3;
+ 			text-decoration: line-through;
+ 		}
+ 		.cur {
+ 			float: right;
+ 			font-size: $ts4;
+ 			color: $tc1;
+ 			line-height: 22px;
+ 			b {
+ 				font-size: $ts1;
+ 				vertical-align: top;
+ 			}
+ 		}
+ 	}
+}
+
+
+
+.senic-detail {
+	.detail-top {
+		background-color: #fff;
+		padding: 12px 10px 2px;
+		.senic-box {
+			padding-bottom: 10px;
+			-webkit-box-align: start;
+			.img {
+				position: relative;
+				.num {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					z-index: 10;
+					color: #fff;
+					font-size: $ts5;
+					padding: 0 4px;
+					height: 16px;
+					text-align: center;
+					line-height: 16px;
+					letter-spacing: 1px;
+					background-color: rgba(0,0,0,.7);
+				}
+			}
+			.info {
+				h4 {
+					line-height: 1.2em;
+					img {
+						vertical-align: top;
+						height: 14px;
+						margin-left: 3px;
+						padding: 0 3px;
+					}
+				}
+				p {
+					line-height: 1.3em;
+				}
+				.links {
+					font-size: $ts5;
+					margin-top: 10px;
+					letter-spacing: 1px;
+					a {
+						color: $tc3;
+					}
+					.link-comment {
+						float: right;
+						img {
+							height: 11px;
+							vertical-align: top;
+							margin-left: 3px;
+						}
+					}
+				}
+			}
+		}
+		.location-box {
+			padding: 8px 0 9px 22px;
+			font-size: $ts4;
+			color: $tc1;
+			background-image: url(../images/ic-location-green.png);
+			background-position: 2px center;
+			background-repeat: no-repeat;
+			background-size: 12px auto;
+		}
+	}
+	.detail-title {
+		position: relative;
+		padding: 8px 10px 8px 20px;
+		font-size: $ts2;
+		color: $tc1;
+		line-height: 1em;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			width: 3px;
+			height: 14px;
+			background-color: $green;
+			margin-top: -7px;
+			z-index: 2;
+		}
+	}
+	.detail-tickets {
+		li {
+			background-color: #fff;
+			margin-bottom: 10px;
+			padding: 0 10px;
+			h4 {
+				font-size: $ts3;
+				padding: 6px 0;
+			}
+			.info {
+				display: -webkit-box;
+				-webkit-box-orient: horizontal;
+				-webkit-box-pack: start;
+				-webkit-box-align: start;
+				padding: 10px 0;
+				p {
+					-webkit-box-flex: 1;
+					font-size: $ts4;
+					color: $tc2;
+				}
+				.price {
+					border-left: 1px solid #eaeaea;
+					padding-left: 12px;
+					margin-left: 12px;
+					-webkit-box-flex: 0;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-box-pack: center;
+					-webkit-box-align: center;
+					> * {
+						display: block;
+					}
+					.ori {
+						font-size: $ts4;
+						color: $tc3;
+						text-decoration: line-through;
+					}
+					.cur {
+						font-size: $ts1;
+						color: $orange;
+						line-height: 22px;
+						font-weight: bold;
+						i {
+							font-size: $ts4;
+							vertical-align: top;
+						}
+					}
+					button {
+						min-width: 60px;
+						padding: 0 10px;
+						height: 22px;
+						line-height: 20px;
+						margin-top: 2px;
+						font-size: $ts4;
+					}
+				}
+			}
+		}
+	}
+}
+
+.senic-comment-top {
+	height: 48px;
+	font-size: $ts3;
+	color: #tc1;
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 0 12px;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: start;
+	-webkit-box-align: center;
+	> * {
+		-webkit-box-flex: 0;
+		margin-right: 8px;
+	}
+	.right {
+		-webkit-box-flex: 1;
+		text-align: right;
+		margin-right: 0;
+	}
+	.ui-comment-rate {
+		margin-right: 0;
+	}
+}
+
+.gallery-list {
+	&.ui-grid-halve {
+		padding-right: 0px;
+		> li {
+			padding-right: 10px;
+		}
+	}
+	.ui-grid-halve-img {
+		padding-top: 55.555%;
+		> span {
+			background-position: center;
+		}
+	}
+}
+.vbox-overlay {
+	position: fixed;
+}

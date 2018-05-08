@@ -1,0 +1,66 @@
+.calendar-qzy {
+	background-color: #fff;
+	padding: 1px 0;
+}
+.calendar-qzy .ca-head {
+	position: relative;
+}
+.calendar-qzy .ca-head .ca-cur-m {
+	display: block;
+	color: #fd7d29;
+	text-align: center;
+	font-size: 14px;
+	line-height: 40px;
+	padding: 0 40px;
+}
+.calendar-qzy .ca-head .ca-prev, .calendar-qzy .ca-head .ca-next {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 40px;
+	text-indent: 1000px;
+	height: 40px;
+	margin-top: -20px;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 8px auto;
+}
+.calendar-qzy .ca-head .ca-prev:active, .calendar-qzy .ca-head .ca-next:active {
+	background-color: #ddd;
+}
+.calendar-qzy .ca-head .ca-prev {
+	left: 0;
+	background-image: url(../images/ca-prev.png);
+}
+.calendar-qzy .ca-head .ca-next {
+	right: 0;
+	background-image: url(../images/ca-next.png);
+}
+.calendar-qzy .ca-body {
+	width: 100%;
+}
+.calendar-qzy .ca-body .ca-table {
+	width: 100%;
+}
+.calendar-qzy .ca-body .ca-table > thead th, .calendar-qzy .ca-body .ca-table > tbody td {
+	text-align: center;
+}
+.calendar-qzy .ca-body .ca-table > thead th {
+	font-size: 14px;
+	line-height: 40px;
+	background-color: #fd7d29;
+	color: #fff;
+	font-weight: normal;
+}
+.calendar-qzy .ca-body .ca-table > tbody td {
+	line-height: 40px;
+	font-size: 12px;
+	color: #333;
+}
+.calendar-qzy .ca-body .ca-table > tbody td.current {
+	color: #fd7d29;
+}
+.calendar-qzy .ca-body .ca-table > tbody td.disabled {
+	color: #ccc;
+}

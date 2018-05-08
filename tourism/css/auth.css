@@ -1,0 +1,26 @@
+body { background: url(../images/bg-auth.jpg) no-repeat center center; background-size: cover; }
+
+.auth-box .logo { display: block; margin: 30px auto 18px; height: 76px; }
+.auth-box .ui-form-item label ~ input { text-align: left; }
+.auth-box .ui-form-item label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio) { width: 70px; }
+.auth-box .ui-form-item input { padding-left: 70px; }
+.auth-box .ui-form-item input[type="checkbox"], .auth-box .ui-form-item input[type="radio"] { padding-left: 0; }
+.auth-box .ui-form-item .ui-password > input[type=password] { display: block; }
+.auth-box .ui-form-item .ui-password > input[type=text] { display: none; }
+.auth-box .ui-form-item .ui-password .ui-switch { right: 0; }
+.auth-box .ui-form-item .ui-password .ui-switch ~ input { padding-right: 60px; }
+.auth-box .ui-module-info .btn-submit { width: 100%; height: 44px; line-height: 42px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin: 15px 0; font-size: 15px; }
+.auth-box .ui-module-info .extra-options { position: absolute; bottom: 20px; width: 100%; display: -webkit-box; font-size: 14px; -webkit-box-pack: center; -webkit-box-align: center; }
+.auth-box .ui-module-info .extra-options > span { color: #94ce58; display: block; width: 100%; -webkit-box-flex: 1; text-align: center; }
+.auth-box .ui-module-info .extra-options > span:first-child { text-align: left; }
+.auth-box .ui-module-info .extra-options > span:last-child { text-align: right; margin-right: 20px;}
+.auth-box .ui-module-info .extra-options a { color: #94ce58; display: inline-block; line-height: 1.2em; border-bottom: 1px solid #94ce58; }
+.auth-box .ui-module-info .rule{color: #999; text-align: center; line-height: 1; font-size: 14px;}
+.auth-box .ui-module-info .rule>img{vertical-align: sub; width: 15px; padding-right: 8px; vertical-align: middle;}
+
+.ui-dialog{ overflow: scroll;}
+.ui-dialog .ui-dialog-cnt {margin:20px 0;}
+.ui-dialog .ui-dialog-cnt .ui-dialog-bd {padding: 14px;}
+.ui-dialog .ui-dialog-cnt .ui-dialog-bd > div > h1{font-size: 15px; border-bottom: 1px solid #eee;margin-bottom: 8px;text-align: center;}
+.ui-dialog .ui-dialog-cnt .ui-dialog-bd > div > h2{ text-align: left;font-size: 14px; padding-top: 10px;}
+.ui-dialog .ui-dialog-cnt .ui-dialog-bd > div > p { color: #333;opacity: 0.7; text-indent: 2em; font-size: 12px;}

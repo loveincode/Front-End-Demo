@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="数道DDO">
+    <meta name="description" content="数道DDO">
+    <title>数道数据驱动运营服务</title>
+    <!--兼容ie8-->
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <!--网页tab ico-->
+    <link rel="shortcut icon" href="../../source/sd-ddo.ico">
+    <link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="../css/animate.min.css?v=4.4.0" rel="stylesheet">
+    <link href="../css/font-awesome.min.css?v=4.7.0" rel="stylesheet">
+    <link href="../css/style.min.css?v=20161216001" rel="stylesheet">
+    <!--公有css style, 后端可统一引入后删除注释-->
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg  pace-done" style="overflow:hidden">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="wrapper">
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side navbar-static-side-gray" role="navigation">
+        <div class="nav-close">
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <div class="slimScrollDiv" style="position: relative; width: auto; height: 100%;">
+            <div class="sidebar-collapse" style="width: auto; height: 100%;">
+                <ul class="nav nav-gray" id="side-menu">
+                    <li class="nav-header navbar-gray logo">
+                        <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <img src="../../source/image/sd-ddo.png" alt="LOGO">
+                                <span>数道数据驱动运营服务</span>
+                            </a>
+                        </div>
+                        <!--<a href="#">-->
+                        <!--<img src="../../source/image" alt="LOGO">-->
+                        <!--<span>数道信息科技有限公司</span>-->
+                        <!--</a>-->
+                        <div class="logo-element">DDO
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="dashboard.html" class="J_menuItem">
+                            <i class="fa fa-dashboard"></i>
+                            <span class="nav-label">工作面板</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a class="J_menuItem" href="chooseTemplate.html">选择报表</a>
+                            </li>
+                            <li><a class="J_menuItem" href="chooseData.html">选择数据源</a>
+                            </li>
+                            <li><a class="J_menuItem" href="chooseIndicator.html">选择指标</a>
+                            </li>
+                            <li><a class="J_menuItem" href="chooseConditions.html">设置筛选条件</a>
+                            </li>
+                            <li><a class="J_menuItem" href="chooseFinal.html">设置筛选条件</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dataSource.html" class="J_menuItem">
+                            <i class="fa fa-line-chart"></i>
+                            <span class="nav-label">数据源</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a class="J_menuItem" href="dataTable.html">数据表指标</a>
+                            </li>
+                            <li><a class="J_menuItem" href="dataSet.html">指标设置</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="template.html" class="J_menuItem">
+                            <i class="fa fa-file-text-o"></i>
+                            <span class="nav-label">模板</span>
+                            <!--<span class="fa arrow"></span>-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dataExport.html" class="J_menuItem">
+                            <i class="fa fa-external-link"></i>
+                            <span class="nav-label">系统导出</span>
+                            <!--<span class="fa arrow"></span>-->
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright copyright-gray">
+                    <!--<a data-toggle="dropdown" class="dropdown-toggle" href="#">-->
+                    <div class="profile-element">
+                        <img style="width: 30px;" src="../../source/image/sd-logo.png" alt="LOGO">
+                        <span>数道信息科技有限公司</span>
+                    </div>
+                    <div class="logo-element">SD</div>
+                    <!--</a>-->
+                    ©️Shudao.all rights reserved.
+                </div>
+            </div>
+            <div class="slimScrollBar"
+                 style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 682px;"></div>
+            <div class="slimScrollRail"
+                 style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.9; z-index: 90; right: 1px;"></div>
+        </div>
+    </nav>
+    <!--左侧导航结束-->
+    <!--右侧部分开始-->
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top blue-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-gray hexagon hexagon-gray" href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!--class="nav navbar-top-links navbar-right-->
+                <div class="dropdown navUserAvatar navbar-right">
+                    <span><img alt="image" class="img-circle" src="../../source/image/profile_small.jpg"></span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                <span class="clear">
+                               <span class="block m-t-xs"><strong class="font-bold">CAPTAIN</strong></span>
+                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                                </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a class="J_menuItem" href="form_avatar.html" data-index="0">修改头像</a>
+                        </li>
+                        <li><a class="J_menuItem" href="profile.html" data-index="1">个人资料</a>
+                        </li>
+                        <li><a class="J_menuItem" href="contacts.html" data-index="2">联系我们</a>
+                        </li>
+                        <li><a class="J_menuItem" href="mailbox.html" data-index="3">信箱</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row content-tabs">
+            <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-angle-double-left"></i>
+            </button>
+            <nav class="page-tabs J_menuTabs">
+                <div class="page-tabs-content">
+                    <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
+                </div>
+            </nav>
+            <button class="roll-nav roll-right J_tabRight"><i class="fa fa-angle-double-right"></i>
+            </button>
+            <div class="btn-group roll-nav roll-right">
+                <button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
+
+                </button>
+                <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                    <li class="J_tabShowActive"><a>定位当前选项卡</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="J_tabCloseAll"><a>关闭全部选项卡</a>
+                    </li>
+                    <li class="J_tabCloseOther"><a>关闭其他选项卡</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+        </div>
+        <div class="row J_mainContent" id="content-main">
+            <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="" frameborder="0" data-id="index_v1.html" seamless=""></iframe>
+        </div>
+
+    </div>
+    <!--右侧部分结束-->
+
+
+</div>
+<script src="../../source/libs/jquery.min.js?v=2.1.4"></script>
+<script src="../../source/libs/bootstrap.min.js?v=3.3.5"></script>
+<script src="../../source/plugins/layer/layer.js?v=3.0.1"></script>
+<script src="../../source/plugins/metisMenu/jquery.metisMenu.js?v=1.1.3"></script>
+<script src="../../source/plugins/slimscroll/jquery.slimscroll.min.js?v=1.3.0"></script>
+
+<script src="../../source/plugins/pace/pace.min.js?v=0.5.1"></script>
+<script src="../../source/libs/hplus.min.js?v=4.0.0"></script>
+<script src="../../source/libs/contabs.min.js"></script>
+
+</body>
+
+</html>

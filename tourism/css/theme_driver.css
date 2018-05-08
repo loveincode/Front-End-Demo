@@ -1,0 +1,29 @@
+.taxi-info-card .phone:after { background-repeat: no-repeat; background-position: center; background-size: contain; }
+
+.ui-footer-navi { border-color: #5279cd; }
+.ui-footer-navi a.active { color: #5279cd; }
+.ui-footer-navi a.active:nth-child(1).active i { background-position: 5px -50px; }
+.ui-footer-navi a.active:nth-child(2).active i { background-position: -35px -50px; }
+.ui-footer-navi a.active:nth-child(3).active i { background-position: -73px -50px; }
+
+.taxi-info-card:before, .taxi-info-card:after { display: none; }
+.taxi-info-card .phone { display: block; position: relative; color: #666; }
+.taxi-info-card .phone:after { content: ''; position: absolute; right: 3px; top: 50%; margin-top: -11px; width: 16px; height: 22px; z-index: 2; background-image: url(../images/ic-phone.png); }
+
+.ui-searchbar-wrap { background-color: #5279cd; }
+.ui-searchbar-wrap.focus .ui-searchbar { border-color: #5279cd; }
+.ui-searchbar-wrap.focus .ui-searchbar .ui-icon-search:before { color: #5279cd; }
+.ui-searchbar-wrap .ui-searchbar-hot ul li.hot { color: #5279cd; border-color: #5279cd; }
+
+.ui-header .ui-header-navi { background-color: #5279cd; }
+
+.auth-box .ui-module-info .extra-options a { color: #5279cd; border-color: #5279cd; }
+
+.auth-box .ui-module-info .extra-options {
+  position: relative;
+  bottom: 0;
+}
+
+.auth-box .ui-module-info .extra-options > span:last-child{
+  margin: 0;
+}

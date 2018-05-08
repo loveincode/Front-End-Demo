@@ -1,0 +1,47 @@
+$green: #94ce58 !global;
+$blue: #5279cd !global;
+$orange: #fd7d29 !global;
+$red: #ff4911 !global;
+
+// 字体颜色
+$tc1: #333 !global;
+$tc2: #666 !global;
+$tc3: #999 !global;
+// 字体大小
+$ts1: 18px !global;
+$ts2: 15px !global; 
+$ts3: 14px !global; 
+$ts4: 12px !global; 
+$ts5: 11px !global;
+
+@mixin border ($size, $type, $color) {
+    -webkit-border: $size $type $color;
+    -moz-border: $size $type $color;
+    border: $size $type $color;
+}
+@mixin radius ($radius: 50%) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+@mixin transition ($type: "all", $duration: ".3s" , $delay: "", $ani: "") {
+    -webkit-transition: unquote($type) unquote($duration) unquote($delay) unquote($ani);
+    -moz-transition: unquote($type) unquote($duration) unquote($delay) unquote($ani);
+    transition: unquote($type) unquote($duration) unquote($delay) unquote($ani);
+}
+
+%borderBox {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+%bgCover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+%bgContain {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}

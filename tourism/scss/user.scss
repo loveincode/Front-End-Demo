@@ -1,0 +1,171 @@
+@import "util.scss";
+
+.user-top {
+	padding: 38px 10px;
+	margin-bottom: 12px;
+	position: relative;
+	box-shadow: 0 2px 5px rgba(0,0,0,.25);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	@extend %bgCover;
+	background-image: url(../images/bg-user-top.jpg);
+	.msg {
+		position: absolute;
+		right: 15px;
+		top: 20px;
+		z-index: 2;
+		> img {
+			width: 33px;
+			vertical-align: top;
+
+		}
+	}
+	.img {
+		width: 76px;
+		height: 76px;
+		margin-bottom: 10px;
+		position: relative;
+		@include radius(50%);
+		@include border(2px, solid, rgba(255,255,255,.4));
+		> span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			@extend %bgCover;
+			@include radius(50%);
+		}
+		.status {
+			position: absolute;
+			text-align: center;
+			width: auto;
+			background-color: #fff;
+			left: 50%;
+			bottom: -1px;
+			z-index: 3;
+			font-size: $ts4;
+			color: $blue;
+			padding: 0 7px;
+			line-height: 16px;
+			box-shadow: 0 0 0 2px rgba(255,255,255,.4);
+			@include radius(15px);
+			white-space: nowrap;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+			&.success {
+				left: auto;
+				right: -5px;
+			}
+		}
+	}
+	p {
+		line-height: 1em;
+		color: #fff;
+		font-size: $ts2;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+}
+
+.ui-user-links {
+	&.ui-list-link > li:after {
+		font-size: 28px;
+	}
+	> li {
+		padding-left: 10px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		font-size: $ts2;
+		color: $tc2;
+		margin-left: 0;
+		&:active {
+			padding-left: 10px;
+		}
+		> a {
+			display: -webkit-box;
+			font-size: $ts2;
+			color: $tc2;
+		}
+	}
+	.ui-list-thumb-s {
+		margin: 0 12px 0 2px;
+		width: 20px;
+		height: 20px;
+		> span {
+			background-size: contain;
+			background-position: center;
+		}
+	}
+}
+
+.user-benefit-cards {
+	padding: 15px 10px;
+	.user-benefit-card {
+		display: block;
+		margin: 0 auto 10px;
+		width: 300px;
+		height: 113px;
+		padding: 0 10px;
+		overflow: hidden;
+		@extend %borderBox;
+		@extend %bgContain;
+		background-image: url(../images/bg-benefit-card.png);
+		&.vip {
+			background-image: url(../images/bg-benefit-card-vip.png);
+		}
+		h3 {
+			font-size: $ts2;
+			color: #fff;
+			line-height: 34px;	
+			margin-bottom: 5px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		h4 {	
+			margin-bottom: 2px;
+			font-size: $ts3;
+			color: $tc1;
+			line-height: 20px;
+		}
+		p {
+			font-size: $ts4;
+			color: $tc2;
+			line-height: 16px;
+		}
+	}
+}
+
+.user-feedback {
+	padding: 15px 10px;
+	textarea {
+		-webkit-appearance: none;
+		background-color: #fff;
+		resize: none;
+		display: block;
+		width: 100%;
+		font-size: $ts3;
+		color: $tc1;
+		height: 150px;
+		padding: 10px;
+		border: none;
+		box-shadow: none;
+		@extend %borderBox;
+		@include radius(5px);
+		&::-webkit-input-placeholder {
+			color: $tc2;
+		}
+		&::-moz-input-placeholder {
+			color: $tc2;
+		}
+	}
+}
+
+.ui-list-info h4 em {
+	font-size: $ts4;
+	margin: 0 8px;
+	letter-spacing: 1px;
+}
+
+

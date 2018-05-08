@@ -1,0 +1,48 @@
+.order-detail .detail-top-senic .img { background-repeat: no-repeat; background-position: center; background-size: cover; }
+
+.ui-tab-order .ui-tab-nav li i { background-repeat: no-repeat; background-position: center; background-size: contain; }
+
+.ui-tab-order .ui-tab-nav { height: 60px; }
+.ui-tab-order .ui-tab-nav li { display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-pack: center; -webkit-box-align: center; min-width: 50px; height: 60px; line-height: 1em; border: none; font-size: 14px; color: #999; position: relative; }
+.ui-tab-order .ui-tab-nav li:not(:last-child):after { content: ''; height: 35px; width: 1px; background-color: #eaeaea; position: absolute; right: 0; top: 50%; z-index: 2; margin-top: -17px; }
+.ui-tab-order .ui-tab-nav li i { display: block; width: 22px; height: 20px; margin-bottom: 6px; margin-top: 2px; pointer-events: none;}
+.ui-tab-order .ui-tab-nav li i.i1 { background-image: url(../images/ic-order-type-1.png); }
+.ui-tab-order .ui-tab-nav li i.i2 { background-image: url(../images/ic-order-type-2.png); }
+.ui-tab-order .ui-tab-nav li i.i3 { background-image: url(../images/ic-order-type-3.png); }
+.ui-tab-order .ui-tab-nav li i.i4 { background-image: url(../images/ic-order-type-4.png); }
+.ui-tab-order .ui-tab-nav li.current { border: none; color: #333; }
+.ui-tab-order .ui-tab-content { margin-top: 0; width: 400%; transition-property: transform; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(-375px, 0px) translateZ(0px);}
+
+.order-list { padding: 12px 10px; }
+.order-list li { margin-bottom: 11px; }
+
+.order-brief { display: block; background-color: #fff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); }
+.order-brief .time { font-size: 14px; padding: 10px 10px 1px; line-height: 1em; color: #666; }
+.order-brief .info { padding: 7px 10px 4px; }
+.order-brief .info h4 { line-height: 18px; color: #333; font-size: 15px; padding: 2px 0; margin-bottom: 2px; }
+.order-brief .info h4 img { height: 17px; vertical-align: top; margin-right: 5px; }
+.order-brief .info p { font-size: 12px; line-height: 1.4em; color: #666; margin-bottom: 5px; }
+.order-brief .total { background-color: #fafafa; border-top: 1px solid #eaeaea; padding: 3px 10px; line-height: 22px; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: justify; -webkit-box-align: center; font-size: 12px; color: #666; }
+.order-brief .total .price { display: inline-block; line-height: 22px; vertical-align: top; font-size: 14px; margin-right: 13px; }
+.order-brief .total .price i { font-size: 11px; display: inline-block; vertical-align: bottom; }
+.order-brief .total button { font-size: 12px; width: 60px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+
+.order-detail { padding: 15px 10px; }
+.order-detail .ui-form { margin-bottom: 10px; }
+.order-detail .ui-form .ui-form-item label ~ textarea { text-align: left; padding-left: 90px; }
+.order-detail .detail-top-senic { display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-align: start; background-color: #fff; padding: 6px 10px; margin-bottom: 10px; }
+.order-detail .detail-top-senic.ui-arrowlink { padding-right: 30px; }
+.order-detail .detail-top-senic .img { -webkit-box-flex: 0; width: 80px; height: 80px; margin-right: 10px; }
+.order-detail .detail-top-senic .info { -webkit-box-flex: 1; }
+.order-detail .detail-top-senic .info .time { font-size: 14px; color: #666; }
+.order-detail .detail-top-senic .info h4 { font-size: 15px; color: #333; }
+.order-detail .detail-top-senic .info p { font-size: 12px; color: #666; }
+.order-detail .detail-top-driver { margin-bottom: 10px; }
+.order-detail .detail-top-driver .order-brief { box-shadow: none; }
+.order-detail .detail-top-driver .driver-info { background-color: #fafafa; padding: 4px 10px; font-size: 14px; color: #333; line-height: 2.1em; }
+.order-detail .detail-top-driver .driver-info label { font-weight: normal; color: #666; margin-right: 10px; }
+
+.order-receiving .total-top { height: 48px; line-height: 18px; font-size: 14px; color: #333; background-color: #fff; padding: 0 12px; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-align: center; }
+.order-receiving .total-top img { height: 18px; vertical-align: top; margin-right: 10px; }
+
+/*# sourceMappingURL=order.css.map */

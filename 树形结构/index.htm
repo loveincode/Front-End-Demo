@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>校园测试学院树形菜单</title>
+
+<!--图标样式-->
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+
+<!--主要样式-->
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.tree li:has(ul)').addClass('parent_li').find(' > span').attr(
+				'title', 'Collapse this branch');
+		$('.tree li.parent_li > span').on(
+				'click',
+				function(e) {
+					var children = $(this).parent('li.parent_li').find(
+							' > ul > li');
+					if (children.is(":visible")) {
+						children.hide('fast');
+						$(this).attr('title', 'Expand this branch')
+								.find(' > i').addClass('icon-plus-sign')
+								.removeClass('icon-minus-sign');
+					} else {
+						children.show('fast');
+						$(this).attr('title', 'Collapse this branch').find(
+								' > i').addClass('icon-minus-sign')
+								.removeClass('icon-plus-sign');
+					}
+					e.stopPropagation();
+				});
+	});
+</script>
+
+</head>
+<body>
+
+	<div class="tree well">
+		<ul>
+			<li><span><i class="icon-folder-open"></i> 计算机与信息学院</span> <a
+				href="">+</a>
+				<ul>
+					<li><span><i class="icon-minus-sign"></i> 软件工程系</span> <a
+						href="">+</a>
+						<ul>
+							<li><span><i class="icon-leaf"></i>软件工程 </span> <a href="">+</a>
+							</li>
+							<li><span><i class="icon-leaf"></i>数字媒体技术 </span> <a href="">+</a>
+							</li>
+
+						</ul></li>
+					<li><span><i class="icon-minus-sign"></i> 计算机应用系</span> <a
+						href="">+</a>
+						<ul>
+							<li><span><i class="icon-leaf"></i> 计算机科学与技术</span> <a
+								href="">+</a></li>
+							<li><span><i class="icon-leaf"></i> 网络工程</span> <a href="">+</a>
+							</li>
+						</ul></li>
+				</ul></li>
+			<li><span><i class="icon-folder-open"></i> 理学院</span> <a href="">+</a>
+				<ul>
+					<li><span><i class="icon-minus-sign"></i> 数学系</span> <a
+						href="">+</a>
+						<ul>
+							<li><span><i class="icon-leaf"></i>统计学 </span> <a href="">+</a>
+							</li>
+							<li><span><i class="icon-leaf"></i>数学应用 </span> <a href="">+</a>
+							</li>
+						</ul></li>
+				</ul></li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

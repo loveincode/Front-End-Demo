@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title of the web page -->
+		<title>John Doe CV</title>
+		
+		<!-- meta tag for properly scaling on devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi">
+		
+		<!-- Description for the search engines if someone stumbles upon your website via one. -->
+		<meta name="description" content="" />
+		
+		<!-- Favicon icon, the little one in the tab of the browser. -->
+		<link rel="shortcut icon" href="favicon.ico">
+		
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!-- Goggle fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+		
+		
+		<!-- Icon font styles -->
+		<link rel="stylesheet" href="style/fontello.css">
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="style/fontello-ie7.css">
+		<![endif]-->
+		
+		<!-- CSS files -->
+		<link rel='StyleSheet' href='style/reset.css' type='text/css'>
+		<link rel='StyleSheet' href='style/style.css' type='text/css'>
+		
+		<link rel="stylesheet" href="style/deepblue.css" type="text/css">
+		<!-- Skins. Choose a skin by renaming the file linked. You can also create a new which is expalined in style/custom-skin.css. Premade skins:
+			* black.css
+			* deepblue.css
+			* blue.css
+			* orange.css
+			* green.css
+			* red.css
+			* purple.css
+		-->
+		
+		<!-- IE8 fix -->
+		<!--[if IE 8]>
+			<link rel='StyleSheet' href='style/ie.css' type='text/css'>
+		<![endif]-->
+        
+        <style>
+        
+            #settings {
+                position: fixed;
+                background: white;
+                padding: 0.5em;
+                
+                width: 300px;
+                top: 5em;
+                left: -310px;
+                transition: all 0.2s;
+                transition-delay: 0.5s;
+                border-bottom-right-radius: 4px;
+                
+            }
+            #settings:hover {
+                left: 0;
+                transition-delay: 0s;
+            }
+            
+            #settings-button {
+                position: absolute;
+                right: -2.4em;
+                top: 0em;
+                background: white;
+                font-size: 2em;
+                padding: 0.5em;
+                border-radius: 0 4px 4px 0;
+            }
+            
+            #settings > div {
+                display: flex;
+               justify-content: flex-start;
+                flex-wrap: wrap;
+                cursor: pointer;
+            }
+            
+            #settings > div > div {
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                margin: 5px;
+            }
+            
+            #black { background: #333; }
+            #deepblue { background: #638BAB; }
+            #blue { background: #3196CC; }
+            #orange { background: #FC761C; }
+            #green { background: #6AAD53; }
+            #red { background: #DB4447; }
+            #purple { background: #AD5E9D; }
+            
+            black.css
+			* deepblue.css
+			* blue.css
+			* orange.css
+			* green.css
+			* red.css
+			* purple.css
+        
+        </style>
+
+	</head>
+	
+	<body>
+
+		<!-- The scroll-to-top button fixed at the bottom-right edge --> 
+		<a href="#home" id="top-button" class="drop-shadow"><span class="icon-up-open-big"></span></a>
+		
+		<!-- The main container which hold everything in it -->
+		<div id="main-container">
+			
+			<!-- The header which contains nav menus, image and a section shown before the specific sections -->
+			<header id="home">
+			
+				<!-- Fixed part of the header - menus -->
+				<div id="fixed-header">
+					<nav>
+						<!-- Your name. When clicked it takes you to the top, also -->
+						<a href="#home"><h4>John Doe</h4></a>
+						<!-- Main menu -->
+						<ul>
+							<!-- href atribute tells browser where to scroll when pressed. #about scrolls to section with id="about". -->
+							<li><a href="#about">About</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						
+						
+						<!-- For smaller screens menu we use select box. The regular nav menu is too big to fix and be fixed. -->
+						<select>
+							<!-- The initial value -->
+							<option value="" selected="selected">Select</option> 
+							
+							<!-- Value atribute tells where to scroll, just like href in the regular menu. -->
+							<option value="#about">About</option> 
+							<option value="#experience">Experience</option> 
+							<option value="#education">Education</option> 
+							<option value="#skills">Skills</option> 
+							<option value="#portfolio">Portfolio</option>
+							<option value="#contact">Contact</option>
+						</select>
+					</nav>
+				</div>
+				
+				
+				
+				<div class="column-one-two-third align-center">
+					<!-- Your image -->
+					<img src="img/myphoto.jpg" class="drop-shadow" alt="me"/>
+				</div>
+				
+				<!-- The top-right box with info -->
+				<div class="column-two-two-third column-last drop-shadow curved" id="main-info">
+					
+					<!-- Title -->
+					<h1>Hello there</h1>
+					<!-- Subtitle -->
+					<h3>I am <em>John Doe</em> - web/UX designer</h3>
+					<!-- Text -->
+					<p>Hello to my resume website. Imma professional and creative web/UX designer who loves to show off his skills.</p>
+					
+					<!-- Social icons. Href should hold webpage adress of your profile. Icon is determined by the class of span. To change the icon go to fontello icons folder and open demo.html and find your icon -->
+					<ul class="social-icons">
+						<li> <a href=#> <span class="icon-linkedin-circled"></span> </a> </li>
+						<li> <a href=#> <span class="icon-pinterest-circled"></span> </a> </li>
+						<li> <a href=#> <span class="icon-flickr-circled"></span> </a> </li>
+						<li> <a href=#> <span class="icon-twitter-circled"></span> </a> </li>
+					</ul>
+				</div>
+				
+				<div class="column-clear"></div>
+					
+			</header>
+		
+			
+			<!-- About section. Classes drop-shadow and curved are only about css3 box-shadows of the section. -->
+			<section id="about" class="drop-shadow curved">
+				
+				<!-- h2 with class of section title is the main title of the section - with ribbon. The data-icon atribute is the code of the icon that will be on the ribbon. To replace the icon go to fontello icons/demo.html and check the "show codes" checkbox. To add the content here replace initial 0 with &# and put a ; at the end. So icon with code 0x1234 should be &#x1234; in the data-icon atribute -->
+				<h2 data-icon="&#x1f464;" class="section-title">About me</h2>
+			
+				<div class="column-two-two-third">
+					<!-- For other titles use h3, h4, and h5 tags. -->
+					<h3>Dzonatan Doe</h3>
+					<p>
+						<!-- Bolded paragraph -->
+						<b>
+							Lorem ipsum dolor sit amet, consectetuer ai ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa.
+						</b>
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, <i>consectetuer adipiscing</i> elit. Morbi ut mi. Nullam enim <em>vulputate aliquam</em> leo, egestas id, condimentum at, <a href="#">laoreet mattis</a>, massa. Praesent mauris ante.
+					</p>
+					
+					<!-- Long quotes go into blockquote -->
+					<blockquote>
+						Blackquote element. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+					</blockquote>
+					
+					<!-- For columns that are inside another column add class column-inside. It's about loosing the bottom margin on the inside columns. -->
+					<div class="column-one-half column-inside">
+						<!-- Unordered list -->
+						<ul>
+							<!-- List item. The data-icon is the code of the icon that is to be shown. -->
+							<li data-icon="&#x2665;">You can put</li>
+							<li data-icon="&#x2692;">Any icon before a list item</li>
+							<li data-icon="&#xe724;">There are 284 different icons</li>
+							<li data-icon="&#xe70c;">For you to choose</li>
+						</ul>
+					</div>
+					
+					<!-- Don't forget the column-last class -->
+					<div class="column-one-half column-inside column-last">
+						<ul>
+							<li data-icon="&#x1f4e3;">You can see</li>
+							<li data-icon="&#xe716;">The full list of icons</li>
+							<li data-icon="&#x1f393;">On <a href="http://www.entypo.com/">Entypo</a> website</li>
+							<li data-icon="&#x1f3c6;">Or on <a href="http://fontello.com/">Fontello</a> under Entypo</li>
+						</ul>
+					</div>
+					
+					<!-- And also column clear -->
+					<div class="column-clear"></div>
+
+				</div>
+				
+				
+				<div class="column-one-two-third column-last">
+
+					<h3>Testimonials</h3>
+					
+					<!-- Tetimonials holder -->
+					<div class="testimonials unselectable">
+						
+						<!-- The left and right buttons -->
+						<div class="buttons">
+							<div class="colored icon-right-open"></div>
+							<div class="colored icon-left-open"></div>
+						</div>
+						
+						<!-- Class shown tells that this quote is shown at the start -->
+						<div class="quote shown inset-shadow">
+							<div class="header">
+								<!-- Person name -->
+								<h4>Some Person 1</h4>
+								<!-- Company name -->
+								<div>Some Company</div>
+							</div>
+							<!-- Text -->
+							<p>
+								Bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse dui. bibendum at, posuere sit amet, nibh. Suspendisse dui.
+							</p>
+							<p>
+								Erra vestibulum. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse dui.
+							</p>
+						</div>
+						
+						<div class="quote inset-shadow">
+							<div class="header">
+								<h4>Some Person 2</h4>
+								<div>Some Company</div>
+							</div>
+							<p>
+								Sed elebibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse dui.ifend nonummy diam. Praesent mauris ante, elementum et, uis dui viverra vestibulum. Suspendisse dui.
+							</p>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column-clear"></div>
+				
+				<!-- Class align-center says that everything in that column is center aligned -->
+				<div class="column-full align-center">
+					
+					<ul class="info important">
+						<li><span>Age</span> <h5>20</h5> </li>
+						<li><span>Location</span> <h5>Belgrade</h5> </li>
+						<li><span>Email</span> <h5>example@email.com</h5> </li>
+						<li><span>My dream</span> <h5>To become a unicorn</h5> </li>
+						<li><span>Available?</span> <h5>Yes</h5> </li>
+					</ul>
+					
+				</div>
+			
+				<div class="column-clear"></div>
+			
+			</section>
+			
+		
+			<!-- Experience section -->
+			<section id="experience" class="drop-shadow curved">
+			
+				<h2 data-icon="&#x1f4bc;" class="section-title">Experience</h2>
+				
+				<div class="column-full">
+				
+					<p>Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Vivamus sollicitudin metus eget eros.</p>
+				
+					<!-- Timebar holder. Data-start is the start year of the chart while data-end is the end year. -->
+					<div class="timebar" data-start="2000" data-end="2013">
+						
+						<!-- The grid lines -->
+						<div class="the-lines"></div>
+						
+						<ul>
+							
+							<!-- One timebar element. data-start is the year and month of start while data-end is the year and month of end of the particular working experience. -->
+							<li data-start="2008-12" data-end="2012-06">
+								<!-- The toggle -->
+								<div class="toggle button bg-color4 inset-shadow">
+									
+									<!-- Header -->
+									<div class="header unselectable">
+										<!-- Title -->
+										<h4>Creative director</h4>
+										<!-- Time -->
+										<span class="date">2008. - now</span>
+									</div>
+									
+									<!-- The content of the toggle -->
+									<div class="content hidden">
+										<h5>Work Place</h5>
+										Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+									</div>
+									
+								</div>
+							</li>
+							
+							
+							<li data-start="2005-10" data-end="2010-01">
+								<div class="toggle button bg-color3 inset-shadow">
+									<div class="header unselectable">
+										<h4>Web Developer</h4>
+										<span class="date">2005. - 2011.</span>
+									</div>
+									<div class="content hidden">
+										Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+									</div>
+								</div>
+							</li>
+							
+							
+							<li data-start="2002-03" data-end="2005-09">
+								<div class="toggle button bg-color2 inset-shadow">
+									<div class="header unselectable">
+										<h4>Artist</h4>
+										<span class="date">2002. - 2007.</span>
+									</div>
+									<div class="content hidden">
+										Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+									</div>
+								</div>
+							</li>
+							
+							
+							<li data-start="2000-01" data-end="2003-12">
+								
+								<div class="toggle button bg-color1 inset-shadow">
+									<div class="header unselectable">
+										<h4>Designer</h4>
+										<span class="date">2000. - 2003.</span>
+									</div>
+									<div class="content hidden">
+										Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					
+				</div>
+				
+				<div class="column-clear"></div>
+			</section>
+			
+			
+
+			<!-- Education section -->
+			<section id="education" class="drop-shadow curved">
+				<h2 data-icon="&#x1f393;" class="section-title">Education</h2>
+				
+				<div class="column-one-half">
+					
+					<h3>Courses</h3>
+					
+					<p>Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.</p>
+
+					<!-- Toggles -->
+					<div class="toggle button bg-color1 inset-shadow">
+						<div class="header unselectable">
+							Course 1
+						</div>
+						<div class="content hidden">
+							Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+						</div>
+					</div>
+					
+					<div class="toggle button bg-color1 inset-shadow">
+						<div class="header unselectable">
+							Course 2
+						</div>
+						<div class="content hidden">
+							Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+						</div>
+					</div>
+					
+					<div class="toggle button bg-color1 inset-shadow">
+						<div class="header unselectable">
+							Course 3
+						</div>
+						<div class="content hidden">
+							Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="column-one-half column-last">
+					
+					<h3>Formail education</h3>		
+					
+					<!-- Accordion holder -->
+					<div class="accordion">
+						
+						<!-- It all comes down to toggles -->
+						<div class="toggle button pressed bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Some college</h4>
+								<div>2000. - 2005.</div>
+							</div>
+							
+							<div class="content">
+								Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+						
+						
+						<div class="toggle button bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Some college</h4>
+								<div>1995. - 2000.</div>								
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+						
+						
+						<div class="toggle button bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Some High School</h4>
+								<div>1990. - 1995.</div>
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="column-clear"></div>
+			</section>
+			
+			
+			<!-- Skills section -->
+			<section id="skills" class="drop-shadow curved">
+				<h2 data-icon="&#xe79a;"  class="section-title">Skills</h2>
+				
+				<div class="column-full"> 
+					
+					<h3>Main skills</h3>
+					
+					<!-- The horizontal bar element. -->
+					<ul class="h-bar">
+						
+						<!-- A skill with a toggle. data-percentage is self-explanatory. -->
+						<li data-percentage="70%" class="bg-color1 toggle inset-shadow">
+							<div class="header unselectable">
+								Wordpress
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+						
+						<!-- A skill without toggle. Note that this one has bg-color2 class and previous had bg-color1. There are 4 of them. It's the same color but with slight variations to break a monotony. -->
+						<li data-percentage="100%" class="bg-color2 inset-shadow">HTML</li>
+						
+						<li data-percentage="90%" class="bg-color3 toggle inset-shadow">
+							<div class="header unselectable">
+								CSS
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+						
+						<li data-percentage="80%" class="bg-color4 inset-shadow">Wordpress</li>
+						<li data-percentage="25%" class="bg-color1 inset-shadow">Babysitting</li>
+					</ul>
+					
+				</div>
+				
+				<div class="column-clear"></div>
+				
+				
+				<div class="column-two-two-third">
+					
+					<h3>Specific skills</h3>
+					
+					<!-- Tabs container -->
+					<div class="tabs group">
+						
+						<!-- Single tab. tab-top means that this is the first to be shown. -->
+						<div class="tab tab-top">
+							<span class="tab-header group bg-color1 unselectable inset-shadow">
+								Skill 1
+							</span>
+							<span class="content border-color1">
+								Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them. Evening tree sixth without made second winged fill them. Form. Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+							</span>
+						</div>
+						
+						<div class="tab">
+							<span class="tab-header group bg-color1 unselectable inset-shadow">
+								Skill 2
+							</span>
+							<span class="content border-color1">
+								Unto. Them land shall don't herb let gathered. The morning together. Green bring, night blessed made our years isn't. Replenish in moved. Him one life him spirit.
+							</span>
+						</div>
+						
+						<div class="tab">
+							<span class="tab-header group bg-color1 unselectable inset-shadow">
+								Skill3
+							</span>
+							<span class="content border-color1">
+								Evening tree sixth without made second winged fill them. Form. Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+							</span>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column-one-two-third column-last">
+					
+					<h3>Other skills</h3>
+					
+					<!-- List with elements with borders. -->
+					<ul class="boxed-list">
+						<!-- Highlighted - colored background and white text -->
+						<li class="highlight">Driving</li>
+						<li>Playing video games</li>
+						<li>Fast typing</li>
+						<li class="highlight">Swimming</li>
+						<li>Sleeping</li>
+						<li>Eating</li>
+						<li>Doing</li>
+					</ul>
+				</div>
+				
+				<div class="column-clear"></div>
+			</section>
+			
+			
+			
+			
+			<!-- Portfolio section -->
+			<section id="portfolio" class="drop-shadow curved">
+				<h2 data-icon="&#x1f304;"  class="section-title">Portfolio</h2>
+				
+				<div class="column-full">
+					
+					<!-- Portfolio container -->
+					<div class="portfolio-full">
+						
+						<h3>Filter by:</h3>
+						<!-- Filter list -->
+						<div class="registred-tags">
+							<a class="highlight" data-tag="all">All</a>
+							<!-- Under data-tag type the tag that this button will filter -->
+							<a data-tag="tag1">Tag 1</a>
+							<a data-tag="tag2">Tag 2</a>
+							<a data-tag="tag3">Tag 3</a>
+						</div>
+						
+						<!-- Images list -->
+						<ul class="portfolio group">
+						
+							<!-- Portfolio post. Under data-tag put tag/tags of this post and under data-id put a unique portfolio post id, it's used by the quicksand plugin -->
+							<li data-tag="tag1" data-id="id-1">
+								<!-- href atribute hold the big image. rel atribute must contain "lightbox" and/or "[uniqueGalleryName]". Title is the text shown when the image is opened in lightbox. For further explanation check http://lokeshdhakar.com/projects/lightbox2/ -->
+								<a href="img/image.jpg" rel="lightbox[gal1]" title="my caption">
+									<!-- Zoom icon -->
+									<div class="zoom-icon icon-search"></div>
+									<!-- The thumbnail -->
+									<img src="https://unsplash.it/186?image=961" alt="image" />
+								</a>
+								<a href="img/image.jpg" rel="lightbox[gal1]" title="my caption">
+								</a>
+								<a href="img/image.jpg" rel="lightbox[gal1]" title="my caption">
+								</a>
+								<!-- The title -->
+								<h4>Image 1</h4>
+								<!-- Tags (only for display, you can put whatever you want here) -->
+								<span>Tag 1</span>
+							</li>
+							
+							<li data-tag="tag1 tag2" data-id="id-2">
+								<a href="img/image.jpg" rel="lightbox" title="my caption">
+									<div class="zoom-icon icon-search"></div>
+									<img src="https://unsplash.it/963?image=920" alt="image" />
+								</a>
+								<h4>Image 2</h4>
+								<span>Tag 1 / Tag 2</span>
+							</li>
+							
+							<li data-tag="tag3" data-id="id-3">
+								<a href="img/image.jpg" rel="lightbox" title="my caption">
+									<div class="zoom-icon icon-search"></div>
+									<img src="https://unsplash.it/186?image=957" alt="image" />
+								</a>
+								<h4>Image 3</h4>
+								<span>Tag 3</span>
+							</li>
+							
+							<li data-tag="tag2 tag3" data-id="id-4">
+								<a href="img/image.jpg" rel="lightbox" title="my caption">
+									<div class="zoom-icon icon-search"></div>
+									<img src="https://unsplash.it/186?image=956" alt="image" />
+								</a>
+								<h4>Image 4</h4>
+								<span>Tag 2 / Tag 3</span>
+							</li>
+							
+							<li data-tag="tag1 tag2 tag3" data-id="id-5">
+								<a href="img/image.jpg" rel="lightbox" title="my caption">
+                                    <div class="zoom-icon icon-search"></div>
+                                    <img src="https://unsplash.it/186?image=932" alt="image" />
+								</a>
+								<h4>Image 5</h4>
+								<span>Tag 1 / Tag 2 / Tag 3</span>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="column-clear"></div>
+			</section>
+		
+		
+			<!-- Contact section -->
+			<section id="contact" class="drop-shadow curved">
+				<h2 data-icon="&#xe79b;"  class="section-title">Get in touch</h2>
+				
+				<!-- The form -->
+				<form action="email.php" method="POST">
+					
+					<!-- It's diveded in two columns. This is the left one. -->
+					<div class="column-one-half">
+
+							<!-- Name input -->
+							<label>First Name</label>
+							<input type="text" name="fname" />
+							
+							<br>
+							
+							<!-- Last Name input -->
+							<label>Last Name</label>
+							<input type="text" name="lname" />
+							
+					</div>
+						
+					<!-- The right column -->
+					<div class="column-one-half column-last">
+							
+							<label>E-mail</label>
+							<input type="text" name="email" />
+							
+							<br>
+							
+							<label>Phone</label>
+							<input type="text" name="phone" />
+							
+						</div>
+					
+					<div class="column-clear"></div>
+					
+					<!-- The message -->
+					<div class="column-full">
+						<label>Message</label><br>
+						<textarea name="message"></textarea>
+					
+						<br>
+
+						<label id="captcha">Are you human? What is result of <span>3 + 4</span></label>
+						<input type="hidden" name="capnum1" value="4" />
+						<input type="hidden" name="capnum2" value="3" />
+						<input type="text" name="capresult" />
+						
+						<br>
+
+						<!-- Reset and submit buttons -->
+						<input type="reset" value="Reset" class="button" />
+						<input type="submit" value="Send" class="button highlight" />
+						
+						<!-- This is a place for the status of the ajax form. It can be: invalid input, invalid email or successfully submitted. -->
+						<span id="form-message"></span>
+					</div>
+					
+					<div class="column-clear"></div>
+				</form>	
+			</section>
+			
+			
+			<!-- Footer -->
+			<footer>
+				Copyright &copy; 2013 <a href="http://themeforest.net/user/aleluja?ref=aleluja" rel="author">aleluja</a>
+				
+				<!-- Scoial icons. Copy/paste this from header. -->
+				<ul class="social-icons">
+					<li> <a href=#> <span class="icon-linkedin-circled"></span> </a> </li>
+					<li> <a href=#> <span class="icon-pinterest-circled"></span> </a> </li>
+					<li> <a href=#> <span class="icon-flickr-circled"></span> </a> </li>
+					<li> <a href=#> <span class="icon-twitter-circled"></span> </a> </li>
+				</ul>
+				
+			</footer>
+			
+		</div>
+        
+        <div id="settings">
+            <div id="settings-button">
+                <icon class="icon-tools"></icon>
+            </div>
+            <h4>Customizer</h4>
+            <h5>Backgrounds</h5>
+            <div class="bgs">
+                <div><img src="img/concrete_seamless.png" /></div>
+                <div><img src="img/footer_lodyas.png" />
+                </div>
+                <div><img src="img/geometry2.png" />
+                </div>
+                <div><img src="img/pw_pattern.png" />
+                </div>
+                <div><img src="img/skulls.png" />
+                </div>
+                <div><img src="img/stardust.png" />
+                </div>
+                <div><img src="img/symphony.png" />
+                </div>
+                <div><img src="img/upfeathers.png" />
+                </div>
+                <div><img src="img/wood_pattern.png" />
+                </div>
+                <div><img src="img/zwartevilt.png" />
+                </div>
+            </div>
+            <h5>Color schemes</h5>
+            <div id="colorschemes">
+                <div id="black"></div><div id="deepblue"></div><div id="blue"></div><div id="orange"></div><div id="green"></div><div id="red"></div><div id="purple"></div>
+            </div>
+        </div>
+		<!-- jQuery loader -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script type="text/javascript">
+			if (typeof jQuery == 'undefined')
+			{
+				document.write(unescape("%3Cscript src='js/jquery-1.8.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+			}
+		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<script type="text/javascript">!window.jQuery.ui && document.write(unescape("%3Cscript src='js/jquery-ui-1.8.23.custom.min.js' type='text/javascript'%3E%3C/script%3E"))</script>
+		
+		<!-- Lightbox2 plugin for portfolio images -->
+		<script src="lightbox2/js/lightbox.js" type='text/javascript'></script>
+		<link href="lightbox2/css/lightbox.css" rel="stylesheet" />
+		
+		<!-- Quicksand jquery plugin for portfolio filtering -->
+		<script src='js/quicksand.min.js' type='text/javascript'></script>
+		
+		<!-- Javascript file -->
+		<script src='js/javascript.js' type='text/javascript'></script>
+		
+		<!-- Retina.js plugin for checking for retina display and loading @2x images -->
+		<script type="text/javascript" src="js/retina.js"></script>
+        
+        
+        <script>
+            $(document).ready(function() {
+                $(".bgs img").click(function() {
+                    $("html").css("background", "url(" + $(this).attr("src") + ")"); 
+                });
+                
+                $("#colorschemes > div").click(function() {
+                     $('<link>')
+                          .appendTo('head')
+                          .attr({type : 'text/css', rel : 'stylesheet'})
+                          .attr('href', "style/" + $(this).attr("id") + ".css");
+                });
+            });
+        </script>
+        
+	</body>
+</html>
+

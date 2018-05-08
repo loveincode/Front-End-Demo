@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head可整个提取出来, 引入在head.jsp-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="数道DDO">
+    <meta name="description" content="数道DDO">
+    <title>数道数据驱动运营服务</title>
+    <!--兼容ie8-->
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <!--网页tab ico-->
+    <link rel="shortcut icon" href="../../source/sd-ddo.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css?v=3.3.5">
+    <link rel="stylesheet" href="../css/animate.min.css?v=4.4.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css?v=4.7.0">
+    <link rel="stylesheet" href="../../source/plugins/steps/jquery.steps.css">
+    <link rel="stylesheet" href="../css/style.min.css?v=20161216001">
+    <!--公有css style, 后端可统一引入后删除注释-->
+    <link href="../css/common.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg container">
+<div class="steps mt15 row">
+    <a class="step" href="chooseTemplate.html">step1</a>
+    <a class="step" href="chooseData.html">step2</a>
+    <a class="step" href="chooseIndicator.html">step3</a>
+    <a class="step" href="chooseConditions.html">step4</a>
+    <a class="step" href="#">step5</a>
+</div>
+<div class="jumbotron row">
+    <h1>第五步，最后一步</h1>
+    <p>可制作各类报表：易客报表支持多数据源，能够根据一定的规则把不同来源的数据拼装成想要的报表样式和结果。可制作各类填报：支持清单、卡片、
+        主从等填报样式。并且支持分页填报，这对大量数据的填报是很有必要的。强大的参数功能：支持各类控件样式的报表参数。参数自动解析功能，造就非常
+        灵活的报表应用。优质的Web体验：易客报表与快乐门户绑定，提供美观、便捷的Web操作体验。权限管理：提供类似Windows NT那样的权限机制，安全
+        有效。这得益于易客报表绑定的快乐服务器，那是一种先进的知识库体系。分布式管理：易客报表可以将报表模板发布到多个报表服务器上，从而实现服务群
+        的模板管理，解决多服务器模板如何一致、维护等的管理问题。 结合淘表网，还可以实现报表模板云备份的服务。</p>
+</div>
+
+<div class="row mt15 white-bg">
+    <div class="ibox-content">
+        <div class="content clearfix">
+            <div class="mtb30">
+                <div class="row mb50">
+                    <div class="col-md-2 col-sm-3 col-xs-6 pt10">设置名称：</div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 ">
+                        <input type="text" class="set-name">
+                    </div>
+                </div>
+                <div class="row mb30">
+                    <div class="col-md-6 col-sm-6 col-xs-6 col-md-push-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-name">报表AA 名称AB</div>
+                                <!--<div class="panel-delete">删除</div>-->
+                            </div>
+                            <div class="panel-body">
+                                <div id="chart1" style="width: 100%;height:340px;"></div>
+                                <!--<img src="../../source/image/echarts-demo1.png" alt="">-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions clearfix text-right">
+            <!--<button class="btn btn-primary btn-style">上一步</button>-->
+            <button class="btn btn-primary btn-style">完成</button>
+        </div>
+    </div>
+</div>
+
+<script src="../../source/libs/jquery.min.js"></script>
+<script src="../../source/libs/jquery-ui.min.js"></script>
+<script src="../../source/libs/echarts.min.js"></script>
+<script src="../js/common.js?v=20161221001"></script>
+<!--<script src="../../source/plugins/staps/jquery.steps.min.js"></script>-->
+<!--<script src="../../source/plugins/validate/jquery.validate.min.js"></script>-->
+<!--<script src="../../source/plugins/validate/messages_zh.min.js"></script>-->
+<script>
+    var myChart = echarts.init(document.getElementById('chart1'));
+    option = {
+        title: {
+            text: '未来一周气温变化',
+            subtext: '纯属虚构',
+            padding: []
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['最高气温','最低气温'],
+            right:75
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                dataView: {readOnly: false},
+//                restore: {},
+//                saveAsImage: {}
+            }
+        },
+        xAxis:  {
+            type: 'category',
+            boundaryGap: false,
+            data: ['周一','周二','周三','周四','周五','周六','周日']
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter: '{value} °C'
+            }
+        },
+        series: [
+            {
+                name:'最高气温',
+                type:'line',
+                data:[11, 11, 15, 13, 12, 13, 10],
+                markPoint: {
+                    data: [
+                        {type: 'max', name: '最大值'},
+                        {type: 'min', name: '最小值'}
+                    ]
+                },
+                markLine: {
+                    data: [
+                        {type: 'average', name: '平均值'}
+                    ]
+                }
+            },
+            {
+                name:'最低气温',
+                type:'line',
+                data:[1, -2, 2, 5, 3, 2, 0],
+                markPoint: {
+                    data: [
+                        {name: '周最低', value: -2, xAxis: 1, yAxis: -1.5}
+                    ]
+                },
+                markLine: {
+                    data: [
+                        {type: 'average', name: '平均值'},
+                        [{
+                            symbol: 'none',
+                            x: '90%',
+                            yAxis: 'max'
+                        }, {
+                            symbol: 'circle',
+                            label: {
+                                normal: {
+                                    position: 'start',
+                                    formatter: '最大值'
+                                }
+                            },
+                            type: 'max',
+                            name: '最高点'
+                        }]
+                    ]
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+</script>
+<script src="../js/chooseConditions.js?v=20161220001"></script>
+<!--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>-->
+</body>
+
+</html>

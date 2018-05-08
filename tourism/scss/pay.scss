@@ -1,0 +1,68 @@
+@import "util.scss";
+
+.pay-senic {
+	.location-box {
+		padding: 3px 0 3px 22px;
+		line-height: 18px;
+		font-size: $ts4;
+		color: $tc1;
+		background-image: url(../images/ic-location-green.png);
+		background-position: 2px center;
+		background-repeat: no-repeat;
+		background-size: 12px auto;
+	}
+	.ui-list {
+		padding: 0;
+		> li {
+			margin: 0 12px;
+			padding: 12px 2px;
+			display: block;
+			&.ui-arrowlink:before {
+				right: 3px;
+			}
+			> a {
+				display: block;
+			}
+			h4 {
+				font-size: $ts4;
+				color: $tc2;
+				line-height: 24px;
+				display: block;
+				span {
+					font-size: $ts1;
+					color: $tc1;
+					line-height: 24px;
+					vertical-align: top;
+				}
+			}
+			p {
+				font-size: $ts4;
+				color: $tc3;
+				line-height: 24px;
+				display: block;
+			}
+		}
+	}
+	.ui-btn-group {
+		margin: 20px 0;
+		-webkit-box-pack: center;
+		.ui-btn {
+			-webkit-box-flex: 0;
+			height: 34px;
+			width: 84px;
+			margin: 0 15px;
+			font-size: $ts4;
+			color: $tc2;
+			border: 1px solid $tc3;
+			@include radius(5px);
+			padding: 0;
+			&:active {
+				color: $tc2;
+			}
+		}
+		
+	}
+}
+
+
+

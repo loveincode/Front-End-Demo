@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>在线报修</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link href="../../user/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../user/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../user/css/animate.min.css" rel="stylesheet">
+	<link href="../../user/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+	<link href="../../user/css/plugins/chosen/chosen.css" rel="stylesheet">
+
+    <link href="../../user/css/style.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/form_repair.css">
+    <link rel="stylesheet" href="./css/form_repair_online.css">
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+	<div class="row">
+	    <div class="col-sm-12">
+	        <div class="ibox float-e-margins">
+	            <div class="ibox-title">
+		            <h5>
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<span><a href="#repair-online" data-toggle="tab">在线报修</a></span></li>
+							<li>
+						</ul>
+					</h5>
+	                <div class="ibox-tools">
+	                    <a class="collapse-link">
+	                        <i class="fa fa-chevron-up"></i>
+	                    </a>
+	                    <a class="dropdown-toggle" data-toggle="dropdown" href="tabs_panels.html#">
+	                        <i class="fa fa-wrench"></i>
+	                    </a>
+	                    <ul class="dropdown-menu dropdown-user">
+	                        <li><a href="tabs_panels.html#">选项1</a>
+	                        </li>
+	                        <li><a href="tabs_panels.html#">选项2</a>
+	                        </li>
+	                    </ul>
+	                    <a class="close-link">
+	                        <i class="fa fa-times"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="ibox-content">
+					<div id="" class="tab-content">
+						<div class="tab-pane fade in active" id="repair-online">
+							<div class="repair-content">
+									<div class="row">
+										<div class="col-sm-2">机器编号：</div>
+										<div class="col-sm-3" >
+											<input type="text" class="" placeholder="">
+										</div>
+										<div class="col-sm-3">
+											<button class="btn">获取联系人相关信息</button>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2">客户名称：</div>
+										<div class="col-sm-8 " >
+											<input type="text" class="" placeholder="">
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2">详细地址：</div>
+										<div class="col-sm-8" >
+											<input type="text" class="" placeholder="">
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2">联系人：</div>
+										<div class="col-sm-3" >
+											<input type="text" class="" placeholder="">
+										</div>
+
+										<div class="col-sm-2 text-center">联系电话：</div>
+										<div class="col-sm-3" >
+											<input type="text" class="" placeholder="">
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2 ">客户预约时间：</div>
+										<div class="col-sm-3" >
+					                        <div class="" id="data_1">
+					                            <!-- <label class="font-noraml">简单示例</label> -->
+					                            <div class="input-group date">
+					                                <input type="text" class="" value="">
+					                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+					                            </div>
+					                        </div>
+										</div>
+
+										<div class="col-sm-2 text-center">故障类型：</div>
+										<div class="col-sm-3" >
+                                            <div class="input-group">
+                                                <select data-placeholder="选择省份..." class="chosen-select" style="width:100%;" tabindex="2">
+                                                    <option value="">请选择故障类型</option>
+                                                    <option value="110000" hassubinfo="true">北京</option>
+                                                    <option value="120000" hassubinfo="true">天津</option>
+                                                    <option value="130000" hassubinfo="true">河北省</option>
+                                                    <option value="140000" hassubinfo="true">山西省</option>
+                                                    <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                                                    <option value="210000" hassubinfo="true">辽宁省</option>
+                                                    <option value="220000" hassubinfo="true">吉林省</option>
+                                                    <option value="230000" hassubinfo="true">黑龙江省</option>
+                                                    <option value="310000" hassubinfo="true">上海</option>
+                                                </select>
+                                            </div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2">故障信息：</div>
+										<div class="col-sm-8 txt-a-box">
+											<textarea class="" rows="2" data-length="120" maxlength="120" placeholder="" ></textarea>
+											<span class="txt-count">120</span>											
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2">异常原因：</div>
+										<div class="col-sm-8 txt-a-box">
+											<textarea class="" rows="2" data-length="120" maxlength="120" placeholder="" ></textarea>
+											<span class="txt-count">120</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2 ">备注： </div>
+										<div class="col-sm-8 txt-a-box">
+											<textarea class="" rows="2" data-length="120" maxlength="120" placeholder="" ></textarea>
+											<span class="txt-count">120</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-2">上传图片视频： </div>
+										<div class="col-sm-4">
+											<div class="img-box">
+												<img src="./img/bg-form-img-add.png">
+												<input type="file" name=""> 
+											</div>
+											<div class="img-box">
+												<img src="./img/086_S.jpg">
+												<input type="file" name=""> 
+											</div>
+											<div class="img-box">
+												<img src="./img/bg-form-img-add.png">
+												<input type="file" name=""> 
+											</div>
+											<div class="img-box">
+												<img src="./img/bg-form-img-add.png">
+												<input type="file" name=""> 
+											</div>
+											<div class="img-box">
+												<img src="./img/bg-form-img-add.png">
+												<input type="file" name=""> 
+											</div>
+											<div class="img-box">
+												<img src="./img/bg-form-img-add.png">
+												<input type="file" name=""> 
+											</div>
+
+										</div>
+										<div class="col-sm-4">
+											<div class="video-box">
+												<!-- <img src="./img/bg-form-img-add.png"> -->
+												<video poster="./img/bg-form-img-add.png"></video>
+												<input type="file" name=""> 
+											</div>
+										</div>
+									</div>
+									<div class="row note">
+										<!-- <div class="col-sm-2"></div> -->
+										<div class="col-sm-4 col-sm-offset-2 col-xs-6">
+											(注：可以上传6张图片)
+										</div>
+										<div class="col-sm-4 col-xs-6">
+											(注：可以上传1个视频)
+										</div>
+										<div class="col-sm-10 text-right">
+											<button class="btn submit">确认上传</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	               
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+	<script src="../../user/js/jquery-2.1.1.min.js"></script>
+	<script src="../../user/js/bootstrap.min.js"></script>
+	<script src="../../user/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+	<script src="../../user/js/plugins/chosen/chosen.jquery.js"></script>
+    <script>
+    	$(function(){
+    		var mydate = new Date();
+    		$("#data_1 .input-group.date").datepicker({
+				todayBtn: "linked",
+				todayHighlight:!0,
+				startDate:mydate,
+				keyboardNavigation: !1,
+				forceParse: !1,
+				calendarWeeks: !1,
+				autoclose: !0
+			}).find("input").val(mydate.getFullYear()+"-"+(mydate.getMonth()+1)+"-"+mydate.getDate());
+			$(".chosen-select").chosen({no_results_text: "没有寻找到结果!"});
+
+			$(".txt-a-box textarea").keydown( function(){
+				var self = $(this);
+				setTimeout(function(){
+					self.parent(".txt-a-box").find(".txt-count").html(self.attr("data-length")-self.val().length)
+				},20)
+			})
+		});
+    </script>
+
+</body>
+</html>

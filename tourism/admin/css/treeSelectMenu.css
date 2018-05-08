@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+li{ list-style: none;z-index:100;}
+ul.nav li{ width: 200px; text-align:center;}
+ul.nav > li{ float: left; margin-right:10px;}
+ul.nav li p{height: 40px; line-height: 40px;}
+ul.nav > li > p{ background: #72a7ff;}
+ul.nav > li > ul > li p{ background: #ffd9d9;}
+ul.nav > li p:hover,.choice{ background: #ffc0c0!important;}
+ul > li > ul{ display: none;}
+ul > li.on > ul{ display: block;}
+ul.nav li{ position: relative;}
+ul.nav > li > ul > li ul{ position:  absolute; top: 0; right: -200px;}
+ul.nav span.sub{ position: absolute; display: block; right:10px; top: 0; width: 10px; height: 40px; background: url(/sdhiu/static/admin/images/arrows.png) no-repeat center center;}

@@ -1,0 +1,56 @@
+.ui-module {
+    margin: 0;
+    padding: 0px 10px;
+}
+.ui-module h4 {
+    font-size: 15px;
+    padding: 8px 0 7px 0;
+    color: #333;
+}
+.ui-module p {
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #999;
+}
+.ui-container .ui-module:nth-child(n+3) h4 {
+    border-top: 1px solid #d1d1d1;
+}
+.pay-sum {
+    float: right;
+    font-size: 12px;
+    color: #666;
+    padding-right: 10px;
+}
+.price i {
+    font-size: 14px;
+}
+.price em {
+    font-size: 18px;
+}
+.ui-module-info {
+    clear: both;
+    padding: 0 10px;
+}
+.ui-container .ui-module-title {
+    color: #666;
+    padding: 9px 10px 5px 10px;
+}
+.ui-container .ui-module-info .ui-module-title {
+    padding: 0;
+}
+.ui-module-info p {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+.ui-container .coupon {
+    position: fixed;
+    bottom: 52px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.ui-container .coupon p {
+    font-size: 14px;
+    color: #ff7d11;
+}

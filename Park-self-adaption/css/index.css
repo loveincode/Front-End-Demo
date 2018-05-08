@@ -1,0 +1,136 @@
+body {
+    background-image: url(../img/bg-index.png), url(../img/bg-earth.png);
+    background-position: center bottom, center 30px;
+}
+.top-box {
+    margin: 15px 15px 5px;
+}
+.top-box img {
+    display: block;
+    margin: 8px auto;
+}
+.top-box img:first-child {
+    height: 45px;
+}
+.top-box img.top-info {
+    height: 30px;
+}
+
+.search-box {
+    margin: 0 15px 10px;
+    border: 1px solid #a98423;
+    position: relative;
+    padding: 5px 130px 5px 10px;
+    height: 36px;
+    background-color: #fff;
+}
+.search-box input {
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1px;
+}
+.search-box .mic {
+    width: 50px;
+    height: 26px;
+    position: absolute;
+    right: 70px;
+    top: 4px;
+    z-index: 2;
+    border: 1px solid #a98423;
+    -webkit-mborder-radius: 4px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/ic-mic.png);
+    background-size: 8px;
+}
+.search-box button {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    z-index: 2;
+    color: #fff;
+    -webkit-mborder-radius: 4px;
+    border-radius: 4px;
+}
+.search-box .search-hot {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -.5%;
+    z-index: 10;
+    width: 101%;
+    height: 140px;
+    overflow: auto;
+    margin: 0;
+}
+.search-box .search-hot ul {
+    padding: 5px;
+}
+.search-box .search-hot ul li {
+    text-align: center;
+    color: #a3a099;
+    line-height: 30px;
+}
+
+.result-list {
+    height: 180px;
+    overflow: auto;
+}
+.result-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e5dabd;
+}
+.result-list li:first-child {
+    padding-top: 0;
+}
+.result-list li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.result-list li h5 {
+    text-align: left;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #031962;
+}
+.result-list li p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #a3a099
+}
+
+.ui-mic-cover {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.ui-mic-cover.show {
+    display: -webkit-box;
+}
+.ui-mic-cover > img {
+    height: 150px;
+}
+.ui-mic-cover > .ui-btn-wrap button {
+    width: 120px;
+    height: 34px;
+    margin: 30px 10px;
+    letter-spacing: 2px;
+}

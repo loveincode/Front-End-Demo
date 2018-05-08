@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head可整个提取出来, 引入在head.jsp-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="数道DDO">
+    <meta name="description" content="数道DDO">
+    <title>指标设置----数道数据驱动运营服务</title>
+    <!--兼容ie8-->
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <!--网页tab ico-->
+    <link rel="shortcut icon" href="../../source/sd-ddo.ico">
+    <link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="../css/animate.min.css?v=4.4.0" rel="stylesheet">
+    <link href="../css/font-awesome.min.css?v=4.7.0" rel="stylesheet">
+    <!-- 选择插件 -->
+    <link href="../../source/plugins/chosen/chosen.css" rel="stylesheet">    
+    <link href="../css/style.min.css?v=20161216001" rel="stylesheet">
+
+    <!--公有css style, 后端可统一引入后删除注释-->
+    <link href="../css/common.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/datasource.css">
+</head>
+
+<body class="gray-bg container data-source">
+
+
+
+
+
+<div class="row main-warp mt15 white-bg data-set">
+    <div class="col-sm-12">
+
+        <div class="row data-item ">
+            <h2 class="text-center">指标设置</h2>
+        </div>
+        <!--下拉option-->
+
+        <div class="row data-list">
+            <div class="col-sm-2 col-sm-offset-2">指标名称</div>
+            <div class="col-sm-6">
+                <input type="" name="">
+            </div>            
+            <div class="col-sm-2 col-sm-offset-2">源字段</div>
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <select data-placeholder=" " class="chosen-select" style="width:100%;" tabindex="2">
+                        <option value=""></option>
+                        <option value="110000" hassubinfo="true">北京</option>
+                        <option value="120000" hassubinfo="true">天津</option>
+                        <option value="130000" hassubinfo="true">河北省</option>
+                        <option value="140000" hassubinfo="true">山西省</option>
+                        <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                        <option value="210000" hassubinfo="true">辽宁省</option>
+                    </select>
+                </div>
+            </div>            
+            <div class="col-sm-2 col-sm-offset-2">关联表</div>
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <select data-placeholder=" " class="chosen-select" style="width:100%;" tabindex="2">
+                        <option value=""></option>
+                        <option value="110000" hassubinfo="true">北京</option>
+                        <option value="120000" hassubinfo="true">天津</option>
+                        <option value="130000" hassubinfo="true">河北省</option>
+                        <option value="140000" hassubinfo="true">山西省</option>
+                        <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                        <option value="210000" hassubinfo="true">辽宁省</option>
+                    </select>
+                </div>
+            </div>            
+            <div class="col-sm-2 col-sm-offset-2">关联字段</div>
+            <div class="col-sm-6">
+
+                <div class="input-group">
+                    <select data-placeholder=" " class="chosen-select" style="width:100%;" tabindex="2">
+                        <option value=""></option>
+                        <option value="110000" hassubinfo="true">北京</option>
+                        <option value="120000" hassubinfo="true">天津</option>
+                        <option value="130000" hassubinfo="true">河北省</option>
+                        <option value="140000" hassubinfo="true">山西省</option>
+                        <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                        <option value="210000" hassubinfo="true">辽宁省</option>
+                    </select>
+                </div>
+
+            </div>  
+            <div class="col-sm-2 col-sm-offset-2">筛选器</div>
+            <div class="col-sm-6">
+                <textarea rows="3"></textarea>
+            </div>
+            <div class="col-sm-2 col-sm-offset-2"></div>
+            <div class="col-sm-6 text-right">
+                <button class="btn btn-submit mt15">提交</button>
+            </div>            
+        </div>
+       
+    </div>
+    <!--加载数据源-->
+    <div class="col-md-12 col-sm-12 mt15 text-right" style="display: none;">
+        <span class="load-more">加载更多...</span>
+    </div>
+</div>
+
+
+<script src="../../source/libs/jquery.min.js"></script>
+<script src="../../source/libs/bootstrap.min.js"></script>
+
+<script src="../../source/plugins/layer/layer.js"></script>
+<script src="../../source/libs/echarts.min.js"></script>
+<script src="../js/common.js?v=20161221001"></script>
+<script src="../js/chooseTemplate.js?v=20161210001"></script>
+<script src="../../source/plugins/chosen/chosen.jquery.js"></script>
+
+<script type="text/javascript">
+    $(".chosen-select").chosen({no_results_text: "没有寻找到结果!"});
+</script>
+</body>
+
+</html>

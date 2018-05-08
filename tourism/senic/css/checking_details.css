@@ -1,0 +1,46 @@
+.information p {
+    font-size: 28px;
+    display: inline-block;
+    padding: 10px 0 0 30px;
+}
+.information {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+.control-tab {
+    margin-top: 22px;
+    padding-left: 30px;
+    padding-right: 62px;
+}
+.bgc-code {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 90px;
+}
+.table {
+    border-collapse: none;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.table thead {
+    background-color: #f9fafb;
+}
+.table thead tr, .table tbody tr {
+    height: 44px;
+}
+.table thead tr th, .table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+@media (max-width:768px) {
+    .information p {
+        font-size: 16px;
+        padding: 10px 0 0 15px;
+    }
+    .information p:first-child {
+        padding-right: 20px;
+    }
+    .control-tab {
+        padding: 0 15px;
+    }
+}

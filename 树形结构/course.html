@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>校园测试课程树形菜单</title>
+
+<!--图标样式-->
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+
+<!--主要样式-->
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.tree li:has(ul)').addClass('parent_li').find(' > span').attr(
+				'title', 'Collapse this branch');
+		$('.tree li.parent_li > span').on(
+				'click',
+				function(e) {
+					var children = $(this).parent('li.parent_li').find(
+							' > ul > li');
+					if (children.is(":visible")) {
+						children.hide('fast');
+						$(this).attr('title', 'Expand this branch')
+								.find(' > i').addClass('icon-plus-sign')
+								.removeClass('icon-minus-sign');
+					} else {
+						children.show('fast');
+						$(this).attr('title', 'Collapse this branch').find(
+								' > i').addClass('icon-minus-sign')
+								.removeClass('icon-plus-sign');
+					}
+					e.stopPropagation();
+				});
+	});
+</script>
+
+</head>
+<body>
+
+
+
+	<div class="tree">
+		<ul>
+			<li><span><i class="icon-calendar"></i> 第一章 绪论</span>
+				<ul>
+					<li><span class="badge badge-success"><i
+							class="icon-minus-sign"></i> 1.1什么是数据结构</span></li>
+					<li><span class="badge badge-success"><i
+							class="icon-minus-sign"></i> 1.2基本概念和术语</span></li>
+					<li><span class="badge badge-warning"><i
+							class="icon-minus-sign"></i> 1.3抽象数据类型的表示与实现</span></li>
+					<li><span class="badge badge-important"><i
+							class="icon-minus-sign"></i>1.4 算法和算法分析</span>
+						<ul>
+							<li><span> &ndash; <a href="">1.4.1 算法</a></li>
+							<li><span> &ndash; <a href="">1.4.2 算法设计的要求</a></li>
+						</ul></li>
+				</ul></li>
+			<li><span><i class="icon-calendar"></i> 第二章 线性表</span>
+				<ul>
+					<li><span class="badge badge-success"><i
+							class="icon-minus-sign"></i> 2.1 线性表的类型定义</span></li>
+
+					<li><span class="badge badge-success"><i
+							class="icon-minus-sign"></i> 2.2 线性表的顺序表示和实现</span></li>
+					<li><span class="badge badge-important"><i
+							class="icon-minus-sign"></i> 2.3 线性表的链式表示和实现</span>
+
+						<ul>
+							<li><span> &ndash; <a href="">2.3.1 线性链表</a></li>
+							<li><span> &ndash; <a href="">2.3.2 循环链表</a></li>
+							<li><span> &ndash; <a href="">2.3.3 双向链表</a></li>
+						</ul></li>
+
+					<li><span class="badge badge-warning"><i
+							class="icon-minus-sign"></i> 2.4 一元多项式的表示及相加</span></li>
+				</ul></li>
+		</ul>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import "util.scss";
+
+body {
+	background: url(../images/bg-auth.jpg) no-repeat center center;
+	background-size: cover;
+}
+.auth-box {
+	.logo {
+		display: block;
+		margin: 30px auto 18px;
+		height: 76px;
+	}
+
+	.ui-form-item {
+		label {
+			~ input {
+				text-align: left;
+			}
+			&:not(.ui-switch):not(.ui-checkbox):not(.ui-radio) {
+				width: 70px;
+			}
+		}
+		input {
+			padding-left: 70px;
+			&[type="checkbox"], &[type="radio"] {
+				padding-left: 0;
+			}
+		}
+		.ui-password {
+			> input {
+				&[type=password] {
+					display: block;
+				}
+				&[type=text] {
+					display: none;
+				}
+			}
+			.ui-switch {
+				right: 0;
+				 ~ input {
+				 	padding-right: 60px;
+				 }
+			}
+		}
+	}
+
+	.ui-module-info {
+		.btn-submit {
+			width: 100%;
+			height: 44px;
+			line-height: 42px;
+			@include radius(5px);
+			margin: 15px 0;
+			font-size: $ts2;
+		}
+		.extra-options {
+			display: -webkit-box;
+			font-size: $ts3;
+	        -webkit-box-pack: center;
+	        -webkit-box-align: center;
+	        > span {
+	        	color: $green;
+	        	display: block;
+	        	width: 100%;
+	        	-webkit-box-flex: 1;
+	        	text-align: center;
+	        	&:first-child {
+	        		text-align: left;
+	        	}
+	        	&:last-child {
+	        		text-align: right;
+	        	}
+	        }
+	        a {
+	        	color: $green;
+	        	display: inline-block;
+	        	line-height: 1.2em;
+	        	border-bottom: 1px solid $green;
+	        }
+	    }
+	}
+}

@@ -1,0 +1,11 @@
+body { background: url(../images/bg-entry.jpg) no-repeat center bottom; background-size: cover; }
+
+.entry-select { padding-top: 70px; }
+.entry-select .logo { width: 76px; height: 76px; display: block; margin: 0 auto 25px; }
+
+.ui-flex { display: -webkit-box; width: 100%; }
+.ui-flex.ui-flex-pack-center { -webkit-box-pack: center; }
+.ui-flex > * { display: block; text-align: center; margin: 0 15px 15px; line-height: 2em; font-size: 15px; color: #333; }
+.ui-flex img { width: 128px; display: block; margin: 0 auto 5px; }
+
+/*# sourceMappingURL=entry.css.map */

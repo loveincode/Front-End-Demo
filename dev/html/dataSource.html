@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head可整个提取出来, 引入在head.jsp-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="数道DDO">
+    <meta name="description" content="数道DDO">
+    <title>数据源----数道数据驱动运营服务</title>
+    <!--兼容ie8-->
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <!--网页tab ico-->
+    <link rel="shortcut icon" href="../../source/sd-ddo.ico">
+    <link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="../css/animate.min.css?v=4.4.0" rel="stylesheet">
+    <link href="../css/font-awesome.min.css?v=4.7.0" rel="stylesheet">
+    <link href="../css/style.min.css?v=20161216001" rel="stylesheet">
+    <!--公有css style, 后端可统一引入后删除注释-->
+    <link href="../css/common.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/datasource.css">
+</head>
+
+<body class="gray-bg container data-source">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 mt15 text-right top-btn-box white-bg">
+            <!--<button class="btn btn-primary btn-style">上一步</button>-->
+            <button class="btn btn-style">新增</button>
+            <button class="btn btn-style">删除</button>
+        </div>
+    </div>
+
+
+
+
+<div class="row main-warp mt15 white-bg">
+    <div class="col-md-12 col-sm-12">
+    <span class="glyphicon glyphicon-ok-sign data-icon-ok"></span>
+        <div class="row data-item ">
+            <div class="col-md-2 col-sm-2 col-xs-2 data-title"><i class="fa fa-circle"></i>正常连接</div>
+            <div class="col-md-2 col-sm-2 col-xs-2 data-title">开大xxxxxxxxxxxxxxxxxxxx</div>
+            <div class="col-md-6 col-sm-6 col-xs-6 data-inputbox">
+                <input type="text" class="">
+				<div class="data-input white-bg" style="">
+					<div class="form-group row">
+					    <label class="col-sm-4 col-lg-3 control-label">URL</label>
+					    <div class="col-sm-8 col-lg-9">
+					        <input minlength="2" type="text" required="" aria-required="true">
+					    </div>
+					</div>
+					<div class="form-group row">
+
+					    <label class="col-sm-4 col-lg-3  control-label">NAME</label>
+					    <div class="col-sm-8 col-lg-9">
+					        <input minlength="2" type="text" required="" aria-required="true">
+					    </div>
+					</div>
+					<div class="form-group row">
+					    <label class="col-sm-4 col-lg-3  control-label">PWD</label>
+					    <div class="col-sm-8 col-lg-9">
+					        <input minlength="2" type="text" required="" aria-required="true">
+					    </div>
+					</div>
+					<div class="form-group row">
+					    <label class="col-sm-4 col-lg-3  control-label">PARAM</label>
+					    <div class="col-sm-8 col-lg-9">
+					        <input minlength="2" type="text" required="" aria-required="true">
+					    </div>
+					</div>
+				</div>
+            </div>
+            <div class="col-xs-2"><button class="btn btn-detail white-bg data-table-toggle">收起</button></div>
+        </div>
+        <!--下拉option-->
+        <div class="row text-center data-table " style="">
+            <div class="col-xs-3">数据表</div>
+            <div class="col-xs-3">注释</div>
+            <div class="col-xs-4">字段</div>
+            <div class="col-xs-2">操作</div>
+            <!-- 第一列 -->
+            <div class="col-xs-3">openu_lab</div>
+            <div class="col-xs-3">传感实验室</div>
+            <div class="col-xs-4 data-title">column1、column1、column/column1、column1、column1</div>
+            <div class="col-xs-2"><button class="btn">指标</button></div>
+            <!-- 第二列 -->
+            <div class="col-xs-3">openu_whole</div>
+            <div class="col-xs-3">个人画像</div>
+            <div class="col-xs-4 data-title">column1、column1、</div>
+            <div class="col-xs-2"><button class="btn">指标</button></div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row main-warp mt15 white-bg">
+    <div class="col-md-12 col-sm-12">
+    <span class="glyphicon glyphicon-ok-sign data-icon-ok active"></span>
+        <div class="row data-item ">
+            <div class="col-md-2 col-sm-2 col-xs-2 data-title"><i class="fa fa-circle fa-circle-active"></i>正常连接</div>
+            <div class="col-md-2 col-sm-2 col-xs-2 data-title">开大xxxxxxxxxxxxxxxxxxxx</div>
+            <div class="col-md-6 col-sm-6 col-xs-6 data-inputbox">
+                <input type="text" class="">
+                <div class="data-input white-bg" style="">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-3 control-label">URL</label>
+                        <div class="col-sm-8 col-lg-9">
+                            <input minlength="2" type="text" required="" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+
+                        <label class="col-sm-4 col-lg-3 control-label">NAME</label>
+                        <div class="col-sm-8 col-lg-9">
+                            <input minlength="2" type="text" required="" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-3 control-label">PWD</label>
+                        <div class="col-sm-8 col-lg-9">
+                            <input minlength="2" type="text" required="" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-3 control-label">PARAM</label>
+                        <div class="col-sm-8 col-lg-9">
+                            <input minlength="2" type="text" required="" aria-required="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-2"><button class="btn btn-detail white-bg data-table-toggle">详情</button></div>
+        </div>
+        <!--下拉option-->
+        <div class="row text-center data-table" style="display: none;">
+            <div class="col-xs-3">数据表</div>
+            <div class="col-xs-3">注释</div>
+            <div class="col-xs-4">字段</div>
+            <div class="col-xs-2">操作</div>
+            <!-- 第一列 -->
+            <div class="col-xs-3">openu_lab</div>
+            <div class="col-xs-3">传感实验室</div>
+            <div class="col-xs-4 data-title">column1、column1、column/column1、column1、column1</div>
+            <div class="col-xs-2"><button class="btn">指标</button></div>
+            <!-- 第二列 -->
+            <div class="col-xs-3">openu_whole</div>
+            <div class="col-xs-3">个人画像</div>
+            <div class="col-xs-4 data-title">column1、column1、</div>
+            <div class="col-xs-2"><button class="btn">指标</button></div>
+
+        </div>
+    </div>
+
+</div>
+<div class="row mt15 white-bg">
+    <!--加载数据源-->
+    <div class="col-md-12 text-right main-warp">
+        <span class="load-more">加载更多...</span>
+    </div>
+    </div>
+</div>
+
+<script src="../../source/libs/jquery.min.js"></script>
+<script src="../../source/plugins/layer/layer.js"></script>
+<script src="../../source/libs/echarts.min.js"></script>
+<script src="../js/common.js?v=20161221001"></script>
+<script src="../js/chooseTemplate.js?v=20161210001"></script>
+
+<script>
+    $(".data-icon-ok").click(function(){
+        $(this).toggleClass("active")
+    })
+    $(".data-inputbox input").click(function(){
+        $(".data-item").removeClass("active")
+        $(this).parents(".data-item").addClass("active")
+    })
+        // $(this).parents(".data-item").removeClass("active")
+    $(window).click(function(e){
+        if(!$(e.target).parents().hasClass("data-inputbox")){
+            $(".data-item").removeClass("active")
+        }
+    })
+    $(".data-table-toggle").click(function(){
+        var this_table = $(this).parents(".main-warp").find(".data-table")
+        if(this_table.css("display")=="none"){
+            $(this).html("收起")
+        }else{
+            $(this).html("详情")
+        }
+        this_table.toggle()
+    })
+</script>
+</body>
+
+</html>

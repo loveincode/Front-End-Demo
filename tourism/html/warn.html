@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../frozen/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <title>HIU</title>
+</head>
+<body>
+    <footer class="ui-footer">
+        <div class="ui-footer-btns">
+            <button type="button" class="btn-footer btn-blue">快速跳转至个人中心</button>
+        </div>
+    </footer>
+
+    <section class="ui-container">
+        <div class="ui-result-status">
+            <img src="../images/ic-warn-big.png" alt="">
+            <p>
+                您未通过司机认证，请等待审核<br/>
+                并可前往个人中心核实资料。
+            </p>
+            <span class="hint">页面会在 <em class="count-num" data-count="5">5</em> 秒后自动跳转至个人中心</span>
+        </div>
+    </section>
+
+    <script src="../frozen/lib/zeptojs/zepto.min.js"></script>
+    <script src="../frozen/js/frozen.js"></script>
+    <script src="../js/util.js"></script>
+    <script>
+        $(function(){
+            countDown($('.count-num'), $('.count-num').attr('data-count'));
+        })
+
+        function countDown (obj, num) {
+            num = parseInt(num);
+            if (num <= 0) {
+                alert('倒计时结束');
+                return;
+            }
+            $(obj).text(num);
+            setTimeout(function(){
+                countDown(obj, --num);
+            }, 1000);
+        }
+        
+    </script>
+</body>
+</html>

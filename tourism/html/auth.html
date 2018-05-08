@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../frozen/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <title>HIU</title>
+    <link rel="stylesheet" type="text/css" href="../css/auth.css">
+</head>
+<body>
+    <header class="ui-header">
+        <div class="ui-header-navi">
+            <a href="#" class="left">
+                <span class="ui-icon-return"></span>
+            </a>
+            <div class="center ui-nowrap">登 录</div>
+            <span class="right"></span>
+        </div>
+    </header>
+
+    <section class="ui-container">
+        <div class="auth-box">
+            <img class="logo" src="../images/demo/demo-logo.png" alt="">
+
+            <div class="ui-module-info">
+                <form action="#">
+                    <div class="ui-form">
+                        <div class="ui-form-item">
+                            <label>手机号</label>
+                            <input type="text" placeholder="输入手机号">
+                        </div>
+                    </div>
+                    <div class="ui-form">
+                        <div class="ui-form-item">
+                            <label>密码</label>
+
+                            <!-- 没有显示密码功能 -->
+                            <!-- <input type="password" placeholder="请输入6-20位字符"> -->
+
+                            <!-- 有显示密码功能 -->
+                            <div class="ui-password">
+                                <div class="ui-switch">
+                                    <input type="checkbox">
+                                </div>
+                                <input type="password" placeholder="请输入6-20位字符">
+                                <input type="text" placeholder="请输入6-20位字符">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-submit btn-green">登 录</button>
+                    <p class="rule"><img src="../images/icon-rule-g.png">同意《服务标准及违约责任约定》</p>
+
+                    <div class="extra-options">
+                        <span><a href="#">立即注册</a></span>
+                        <span><a href="#">动态密码登录</a></span>
+                        <span><a href="#">忘记密码</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="ui-dialog">
+        <div class="ui-dialog-cnt">
+            <div class="ui-dialog-bd">
+                <div>
+                <h1>火堆项目发起条款</h1>
+                <h2>1.释义</h2>
+                  <p>本服务条款系由用户与上海鸿利数码科技有限公司（金酷游戏）服务条款中简称为"金酷"就其所提供的网络服务（包括但不所订立的相关权利义务规范。用户指愿意使用金酷提供的网络服务的个人。此份合约描述金酷向用户提供网络服务的详细条款。因此，请于注册成为金酷提供的网络服务的用户前，确实详细阅读本服务条款的所有内容，当用户点选同意键或使用任何金酷所提供的网络服务即视为同意并接受本服务条款的所有规范并愿受其约束。用户应当明确：无论事实上是否在注册前认真阅读，只要用户点击“同意”按钮并按照相关注册程序成功注册，用户的行为就已表示用户无条件接受了本协议及本公司所公布各项管理规定，并愿意受其约束。如果发生纠纷，用户不得以未仔细阅读为由进行抗辩。</p>
+                <h2>2.著作权声明</h2>
+                  <p>金酷所提供的网络服务的相关著作权、专利权、商标、营业秘密及其它任何所有权或权利，均属金酷所有。非经金酷的同意，任何人或用户均不得擅自下载、重制、传输、改作、编辑，否则应负所有法律责任。金酷拥有向用户提供网络服务过程中所产生并储存于金酷服务器中的任何数据信息（包括但不仅限于账号等数据信息）的所有权。
+        </p>
+                <h2>2.著作权声明</h2>
+                  <p>金酷所提供的网络服务的相关著作权、专利权、商标、营业秘密及其它任何所有权或权利，均属金酷所有。非经金酷的同意，任何人或用户均不得擅自下载、重制、传输、改作、编辑，否则应负所有法律责任。金酷拥有向用户提供网络服务过程中所产生并储存于金酷服务器中的任何数据信息（包括但不仅限于账号等数据信息）的所有权。
+        </p>
+              </div>
+            </div>
+            <div class="ui-dialog-ft ui-btn-group">
+                <button type="button" data-role="button"  class="select" id="dialogButton">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../frozen/lib/zeptojs/zepto.min.js"></script>
+    <script src="../frozen/js/frozen.js"></script>
+    <script src="../js/util.js"></script>
+    <script type="text/javascript">
+
+    $(".rule").tap(function(){
+        var dia2=$(".ui-dialog").dialog("show",'slow');
+        dia2.on("dialog:action",function(e){
+            console.log(e.index)
+        });
+    })
+    </script>
+</body>
+</html>

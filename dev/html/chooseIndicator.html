@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head可整个提取出来, 引入在head.jsp-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="数道DDO">
+    <meta name="description" content="数道DDO">
+    <title>数道数据驱动运营服务</title>
+    <!--兼容ie8-->
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <!--网页tab ico-->
+    <link rel="shortcut icon" href="../../source/sd-ddo.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css?v=3.3.5">
+    <link rel="stylesheet" href="../css/animate.min.css?v=4.4.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css?v=4.7.0">
+    <link rel="stylesheet" href="../../source/plugins/steps/jquery.steps.css">
+    <link rel="stylesheet" href="../css/style.min.css?v=20161216001">
+    <!--公有css style, 后端可统一引入后删除注释-->
+    <link href="../css/common.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg container">
+<div class="steps row mt15">
+    <a class="step" href="chooseTemplate.html">step1</a>
+    <a class="step" href="chooseData.html">step2</a>
+    <a class="step" href="#">step3</a>
+    <a class="step step-active">step4</a>
+    <a class="step step-active">step5</a>
+</div>
+<div class="jumbotron row">
+    <h1>第三步，选择展示指标</h1>
+    <p>可制作各类报表：易客报表支持多数据源，能够根据一定的规则把不同来源的数据拼装成想要的报表样式和结果。可制作各类填报：支持清单、卡片、
+        主从等填报样式。并且支持分页填报，这对大量数据的填报是很有必要的。强大的参数功能：支持各类控件样式的报表参数。参数自动解析功能，造就非常
+        灵活的报表应用。优质的Web体验：易客报表与快乐门户绑定，提供美观、便捷的Web操作体验。权限管理：提供类似Windows NT那样的权限机制，安全
+        有效。这得益于易客报表绑定的快乐服务器，那是一种先进的知识库体系。分布式管理：易客报表可以将报表模板发布到多个报表服务器上，从而实现服务群
+        的模板管理，解决多服务器模板如何一致、维护等的管理问题。 结合淘表网，还可以实现报表模板云备份的服务。</p>
+</div>
+
+<div class="row mt15 white-bg">
+    <div class="ibox-content">
+        <div class="content clearfix">
+            <div class="drop-group mtb30">
+                <div class="row mb30">
+                    <div class="col-md-2 col-sm-3 col-xs-6 pt30">X轴：</div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 ">
+                        <div class="drop-itemX"></div>
+                    </div>
+                    <div class="col-md-1 col-sm-3 pt30">
+                        <button class="btn btn-primary revoke">撤回</button>
+                    </div>
+                </div>
+                <div class="row mb30">
+                    <div class="col-md-2 col-sm-3 col-xs-6 pt30">Y轴：</div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="drop-itemY"></div>
+                    </div>
+                    <div class="col-md-1 col-sm-3 pt30">
+                        <button class="btn btn-primary revoke">撤回</button>
+                    </div>
+                </div>
+            </div>
+            <div class="drag-element">
+                <div draggable="true" class="drag-label blue-label">id</div>
+                <div draggable="true" class="drag-label yellow-label">year</div>
+                <div draggable="true" class="drag-label lightBlue-label">school</div>
+                <div draggable="true" class="drag-label lightRed-label">score</div>
+                <div draggable="true" class="drag-label purple-label">attention</div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 mb30 text-right">
+            <!--<button class="btn btn-primary btn-style">上一步</button>-->
+            <button class="btn btn-primary btn-style preview">预览</button>
+            <button class="btn btn-primary btn-style nextPage">下一步</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<script src="../../source/libs/jquery.min.js"></script>
+<script src="../../source/libs/jquery-ui.min.js"></script>
+<script src="../js/common.js?v=20161221001"></script>
+<script src="../../source/plugins/layer/layer.js"></script>
+<script src="../js/chooseIndicator.js?v=20161220001"></script>
+</body>
+
+</html>

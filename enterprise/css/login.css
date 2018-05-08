@@ -1,0 +1,49 @@
+.bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.head {
+    padding: 20px 0;
+}
+
+.logo {
+    background-image: url('../img/logo-o.png');
+    height: 112px;
+    width: 112px;
+    margin: auto;
+}
+
+form label .mobile {
+    background-image: url('../img/ic-login.png');
+    width: 14px;
+    height: 25px;
+    display: block;
+    background-position: 0;
+}
+
+form label  .code  {
+    background-image: url('../img/ic-login.png');
+    width: 14px;
+    height: 25px;
+    display: block;
+    background-position-x: -14px;
+}
+.form-ctrl .wrap {
+	    margin-right: 108px;
+}
+.form-ctrl .wrap input{
+	width: 100%;
+	
+}
+.btn.btn-getcode{
+	color:#E74C3C;
+	border-left: 1px solid #ccc;
+    padding: 3px 12px;
+    line-height: 1.0em;
+    border-radius: 0;
+    font-weight: 600;
+    float: right;
+        margin: 8px 0;
+}

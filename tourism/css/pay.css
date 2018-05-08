@@ -1,0 +1,13 @@
+.pay-senic .location-box { padding: 3px 0 3px 22px; line-height: 18px; font-size: 12px; color: #333; background-image: url(../images/ic-location-green.png); background-position: 2px center; background-repeat: no-repeat; background-size: 12px auto; }
+.pay-senic .ui-list { padding: 0; }
+.pay-senic .ui-list > li { margin: 0 12px; padding: 12px 2px; display: block; }
+.pay-senic .ui-list > li.ui-arrowlink:before { right: 3px; }
+.pay-senic .ui-list > li > a { display: block; }
+.pay-senic .ui-list > li h4 { font-size: 12px; color: #666; line-height: 24px; display: block; }
+.pay-senic .ui-list > li h4 span { font-size: 18px; color: #333; line-height: 24px; vertical-align: top; }
+.pay-senic .ui-list > li p { font-size: 12px; color: #999; line-height: 24px; display: block; }
+.pay-senic .ui-btn-group { margin: 20px 0; -webkit-box-pack: center; }
+.pay-senic .ui-btn-group .ui-btn { -webkit-box-flex: 0; height: 34px; width: 84px; margin: 0 15px; font-size: 12px; color: #666; border: 1px solid #999; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 0; }
+.pay-senic .ui-btn-group .ui-btn:active { color: #666; }
+
+/*# sourceMappingURL=pay.css.map */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <script src="../../libs/echarts.js"></script>
+
+    <title>企业信息</title>
+    <link type="text/css" rel="stylesheet" href="../../css/index.css">
+    <link type="text/css" rel="stylesheet" href="../../css/enterpriseStyle.css">
+</head>
+<body class="business-details enterprise-list enterprise-info">
+<header>
+    <a href="#">
+        <img src="../../imgs/prebtn.png">
+    </a>
+    <p>企业信息</p>
+</header>
+<div class="chart-show-info">
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="chart-show" class="chart-show"></div>
+</div>
+<section>
+    <div class="check-record-title">
+        <p>检查记录</p>
+    </div>
+    <div class="check-record pending">
+        <time datetime="2016.10.1">2016.10.1</time>
+        <p><span>安监记录</span><span>（待查看）</span></p>
+    </div>
+    <div class="check-record rectification">
+        <time datetime="2016.9.1">2016.9.1</time>
+        <p><span>安监记录</span><span>（待整改）</span></p>
+    </div>
+    <div class="check-record checking">
+        <time datetime="2016.8.1">2016.8.1</time>
+        <p><span>安监记录</span><span>（待审核）</span></p>
+    </div>
+    <div class="check-record passed">
+        <time datetime="2016.7.1">2016.7.1</time>
+        <p><span>安监记录</span><span>（已通过）</span></p>
+    </div>
+    <div class="check-record audit-failed">
+        <time datetime="2016.6.1">2016.6.1</time>
+        <p><span>安监记录</span><span>（审核未通过）</span></p>
+    </div>
+</section>
+<footer>
+    <div class="submit-btn">
+        <input type="button" value="安监登记">
+    </div>
+</footer>
+<script src="../../js/myChart.js"></script>
+</body>
+</html>

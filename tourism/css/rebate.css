@@ -1,0 +1,67 @@
+.order-detail {
+    padding: 15px 10px;
+}
+.order-detail .ui-form {
+    margin-bottom: 10px;
+}
+.order-detail .ui-form .ui-form-item label~ textarea {
+    text-align: left;
+    padding-left: 90px;
+}
+.order-detail .detail-top-senic {
+    background-color: #fff;
+    padding: 6px 10px 0px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 4px rgba(10, 2, 5, .18);
+}
+.order-detail .detail-top-senic .img {
+    -webkit-box-flex: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+.order-detail .detail-top-senic .info {
+    -webkit-box-flex: 1;
+    display: inline-block;
+}
+.order-detail .detail-top-senic .info h4 {
+    font-size: 15px;
+    color: #333;
+}
+.order-detail .detail-top-senic .info .time {
+    font-size: 14px;
+    color: #666;
+}
+.order-detail .detail-top-senic .info p {
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
+.order-detail .detail-top-senic .rebate {
+    background-color: #fafafa;
+    border-top: 1px solid #eaeaea;
+    padding: 3px 10px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    font-size: 15px;
+    color: #666;
+    margin: 0 -10px;
+}
+.order-detail .detail-top-senic .rebate .price {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: center;
+    font-size: 14px;
+    margin-right: 13px;
+}
+.order-detail .detail-top-senic .rebate .price i {
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: bottom;

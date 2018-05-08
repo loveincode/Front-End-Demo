@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../frozen/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <title>HIU</title>
+    <link rel="stylesheet" type="text/css" href="../css/taxi.css">
+</head>
+<body>
+    <footer class="ui-footer">
+        <div class="ui-footer-btns">
+            <button type="button" class="btn-footer btn-green">确认发送</button>
+        </div>
+    </footer>
+
+    <section class="ui-container">
+        <div class="img-top">
+            <img src="../images/img-taxi-status-1.png" />
+        </div>
+
+        <div class="ui-module-info">
+            <form action="#">
+                <div class="ui-form">
+                    <div class="ui-form-item align-arrow">
+                        <label><img src="../images/ic-locate-green.png" />出发地点</label>
+                        <input type="text" placeholder="请输入出发地点">
+                    </div>
+                    <div class="ui-form-item align-arrow ui-border-t">
+                        <label><img src="../images/ic-locate-orange.png" />出发地点</label>
+                        <input type="text" placeholder="请输入出发地点">
+                        <div class="location-results">
+                            <ul class="ui-list ui-list-text ui-list-active ui-list-cover">
+                                <li>
+                                    <p>搜索地点一</p>
+                                </li>
+                                <li>
+                                    <p class="ui-border-t">搜索地点二</p>
+                                </li>
+                                <li>
+                                    <p class="ui-border-t">搜索地点二</p>
+                                </li>
+                                <li>
+                                    <p class="ui-border-t">搜索地点二</p>
+                                </li>
+                                <li>
+                                    <p class="ui-border-t">搜索地点二</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-form">
+                    <div class="ui-form-item align-arrow">
+                        <label>预约用车</label>
+                        <div class="ui-switch">
+                            <input type="checkbox" class="pick-time-btn">
+                        </div>
+                    </div>
+                    <div class="pick-time ui-form-item ui-form-item-link ui-border-t">
+                        <label>选择预约时间</label>
+                        <input type="datetime-local" value="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="../frozen/lib/zeptojs/zepto.min.js"></script>
+    <script src="../frozen/js/frozen.js"></script>
+    <script src="../js/util.js"></script>
+        
+    <script>
+        $('.pick-time-btn').click(function(){
+            var obj = $(this);
+            setTimeout(function(){
+                if (obj.attr('checked')) {
+                    $('.pick-time').show();
+                } else {
+                    $('.pick-time').hide();
+                }
+                
+            }, 1)
+        });
+    </script>
+</body>
+</html>

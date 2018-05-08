@@ -1,0 +1,28 @@
+body {
+    background-image: none;
+}
+.ui-footer {
+    border-top: 1px solid #ddd;
+    height: 44px;
+}
+.ui-footer button {    
+    margin: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #444 !important;
+}
+
+.title {
+	text-align: center;
+	font-size: 16px;
+	color: #031962;
+	line-height: 20px;
+	padding: 4px 5px;
+	font-weight: bold;
+}
+.contact-list li {
+	font-size: 14px;
+	padding: 2px 5px;
+	line-height: 16px;
+	color: #666;
+}

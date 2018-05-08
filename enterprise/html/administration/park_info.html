@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <script src="../../libs/jquery-1.12.3.min.js"></script>
+    <script src="../../libs/echarts.js"></script>
+
+    <title>园区信息</title>
+    <link type="text/css" rel="stylesheet" href="../../css/index.css">
+</head>
+<body class="business-details enterprise-list enterprise-info park-info">
+<header>
+    <a href="#">
+        <img src="../../imgs/prebtn.png">
+    </a>
+    <p>园区信息</p>
+</header>
+<div class="park-info-show">
+    <p>园区信息</p>
+    <div id="park-info-chart" class="park-info-chart"></div>
+    <p>安监趋势分析</p>
+    <div id="trend-analysis" class="trend-analysis"></div>
+</div>
+<section>
+    <div class="safety-supervision-enterprise-list">
+        <p>推荐监察企业名单</p>
+        <select name="enterprises">
+            <option selected></option>
+            <option value="XXX化工有限公司">XXX化工有限公司</option>
+            <option value="XXX化工有限公司">XXX化工有限公司</option>
+            <option value="XXX化工有限公司">XXX化工有限公司</option>
+            <option value="XXX化工有限公司">XXX化工有限公司</option>
+            <option value="XXX化工有限公司">XXX化工有限公司</option>
+            <option value="XXX化工有限公司">XXX化工有限公司</option>
+        </select>
+    </div>
+    <div class="enterprises-selected">
+        <p>1、XXX化工有限公司</p>
+    </div>
+    <div class="enterprises-selected">
+        <p>2、XXX化工有限公司</p>
+    </div>
+    <div class="enterprises-selected">
+        <p>3、XXX化工有限公司</p>
+    </div>
+</section>
+    <div class="show-all-enterprise">
+        <input type="button" value="查看全部企业">
+    </div>
+    <div class="high-temperature-warning">
+        <p>预警：高温天气，请加强对产品A的管理</p>
+    </div>
+<script src="../../js/myPieChart.js"></script>
+</body>
+</html>

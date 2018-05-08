@@ -1,0 +1,49 @@
+
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    font-family: "Microsoft YaHei" , "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.bg-warp{
+    display: inline-block;
+    background: #666 50% 40% no-repeat;
+    height:95%;
+    width: 96%;
+    margin: 2%;
+    background-size:cover;
+    position: relative;
+    letter-spacing:5px;
+}
+.bg-title{
+    display: inline-block;
+    position: absolute;
+    top:34%;
+    right: 7%;
+}
+.bg-title-t{
+    color: #457abc;
+}
+.bg-title-b{
+    margin-top: 10px;
+    transform:rotateX(180deg) ;
+}
+.bg-title-b .bg-title-h{
+    opacity: .03;
+}
+.bg-title-b .bg-title-p{
+    opacity: .05;
+}
+
+.bg-title-h{
+    font-size: 50px;
+    font-weight: bold;
+}
+.bg-title-p{
+    margin-top: 10px;
+    font-size: 30px;
+}

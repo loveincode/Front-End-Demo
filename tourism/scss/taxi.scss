@@ -1,0 +1,129 @@
+@import "util.scss";
+.gap-top {
+	padding-top: 15px;
+}
+.img-top {
+	text-align: center;
+	img {
+		vertical-align: top;
+	}
+}
+.pick-time {
+	display: none;
+}
+.taxi-info-line {
+	display: block;
+	font-size: $ts3;
+	color: $tc2;
+	line-height: 20px;
+	padding: 12px;
+	background-color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	@include radius(5px);
+	img {
+		height: 15px;
+		vertical-align: middle;
+		margin-top: -2px;
+		margin-right: 10px;
+	}
+	.price {
+		font-size: $ts1;
+		font-weight: bold;
+		i {
+			font-size: $ts4;
+			vertical-align: top;
+		}
+	}
+}
+.taxi-info-card {
+	display: block;
+	line-height: 44px;
+	font-size: $ts3;
+	color: $tc2;
+	padding: 0 12px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	@include radius(5px);
+	border: 1px solid #666;
+	position: relative;
+	label {
+		font-weight: normal;
+		margin-right: 10px;
+	}
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 6px;
+		z-index: 2;
+		background-image: url(../images/ic-dot-gray.png), url(../images/ic-dot-gray.png);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 100% auto, 100% auto;
+		background-position: center 4px, center calc(100% - 4px);
+	}
+	&:before {
+		left: 4px;
+	}
+	&:after {
+		right: 4px;
+	}
+}
+
+.taxi-msg-send {
+	background-color: #fff;
+	margin: 0 auto 10px;
+	padding: 10px;
+	text-align: right;
+	textarea {
+		display: block;
+		background-color: transparent;
+		-webkit-appearance: none;
+		border: none;
+		width: 100%;
+		height: 80px;
+		resize: vertical;
+		color: $tc1;
+		font-size: $ts3;
+		&::-webkit-input-placeholder {
+			color: $tc3;
+		}
+		&::-moz-input-placeholder {
+			color: $tc3;
+		}
+	}
+	button {
+		margin-top: 10px;
+		font-size: $ts2;
+		width: 80px;
+		height: 30px;
+		line-height: 28px;
+		padding: 0;
+		@include radius(5px);
+	}
+}
+
+.location-results {
+	display: none;
+	position: absolute;
+	width: calc(100% + 22px);
+	top: 108%;
+	left: -11px;
+	z-index: 99;
+	margin-bottom: 55px;
+	text-align: right;
+	@include radius(5px);
+	&.show {
+		display: block;
+	}
+	.ui-list-cover > li {
+		color: $tc2;
+		font-size: $ts3;
+		line-height: 20px;
+		padding: 0 12px;
+		p {
+			padding: 10px 15px;
+		}	
+	}
+}

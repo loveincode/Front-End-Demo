@@ -1,0 +1,318 @@
+.ui-list.style1 li:nth-child(2) .ui-list-thumb-s span {
+    background-position-y: -19px;
+}
+
+.ui-list.style1 li:nth-child(3) .ui-list-thumb-s span {
+    background-position-y: -36px;
+}
+
+.ui-list.style1 li:nth-child(4) .ui-list-thumb-s span {
+    background-position-y: -54px;
+}
+
+.ui-list.style1 li:nth-child(5) .ui-list-thumb-s span {
+    background-position-y: -72px;
+}
+
+.head {
+    height: 142px;
+    padding-top: 44px;
+    box-sizing: content-box;
+}
+
+.head>div {
+    margin: 10px auto 10px;
+}
+
+.head h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.nav.style2 {
+    padding: 4px 0;
+    border-bottom: 1px solid #B3B3B3;
+    background-color: #fff;
+}
+
+.nav.style2 .ui-tiled li+li {
+    border-left: 1px solid #999999;
+}
+
+.nav.style2 .ui-tiled li.active a {
+    color: #F26500;
+}
+
+.nav.style2 .ui-tiled li a {
+    line-height: 2em;
+    color: #000;
+    font-size: 1.4rem
+}
+
+.ui-notice.style1 img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.ui-notice.style1 {
+    top: 0;
+}
+
+.ui-notice.style1 p {
+    color: #96AAA9;
+    font-size: 1.2rem
+}
+
+.favor span.vender {
+    color: #F26500;
+}
+
+.ui-form.style1 {
+    background-color: transparent;
+}
+
+.ui-form.style1 form>* {
+    margin: 10px 10px 0;
+    background-color: #fff;
+}
+
+.ui-form.style1 textarea {
+    resize: none;
+}
+
+.ui-list.style1 li h4 {
+    font-size: 1.4rem;
+}
+
+.ui-list.style1 li h4 {
+    font-size: 1.4rem;
+}
+
+.ui-list.style1 .ui-list-thumb-s {
+    width: 18px;
+    height: 18px;
+    margin: 12px 10px 12px 0px;
+}
+
+.ui-list-link.style1 > li:after {
+    right: 0;
+}
+
+.ui-list-link.style1 > li {
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.ui-list.style1 li h4,
+.style1 .ui-txt-info {
+    font-size: 1.4rem
+}
+
+.nav.style1 {
+    text-align: center;
+    font-size: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.nav.style1 li {
+    font-size: 1.4rem;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #F26500;
+    background-color: #fff;
+}
+
+.nav.style1 li:first-child {
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px
+}
+
+.nav.style1 li:last-child {
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px
+}
+
+.nav.style1 li > a {
+    color: #F26500;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+    line-height: 2rem;
+}
+
+.nav.style1 li.active {
+    background-color: #F26500;
+}
+
+.nav.style1 li.active > a {
+    color: #fff;
+}
+
+.oo-form {
+    padding: 0 15px;
+}
+
+.oo-form .ui-form-item {
+    height: auto;
+    min-height: 4.4rem;
+}
+
+.oo-form .ui-form-item label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio) {
+    font-size: 1.4rem;
+    width: 7rem;
+    color: #333;
+    left: .1rem;
+}
+
+.oo-form .ui-form-item label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio) + *,
+.oo-form .ui-form-item input,
+.oo-form .ui-form-item textarea {
+    padding-left: 6rem;
+    padding-right: 20px;
+    font-size: 1.4rem;
+    color: #666;
+    text-align: right;
+    margin-top: 1.4rem;
+}
+
+.oo-form .ui-form-item textarea:focus {
+    
+}
+
+.oo-form .ui-form-item .ui-form-select {
+    position: relative;
+}
+
+.oo-form .ui-form-item .ui-form-select:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 1.5rem;
+    width: 1.8rem;
+    height: 1.4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/icon-arrow-down.png);
+}
+
+.oo-form .ui-form-item .ui-form-select input {
+    padding-right: 30px;
+}
+
+.oo-form .ui-form-item .ui-form-select select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.oo-form .ui-form-item .form-item-location {
+    padding-right: 30px;
+    position: relative;
+    padding-bottom: 0;
+    margin-top: 0.7rem !important;
+}
+
+.oo-form .ui-form-item .form-item-location .btn-location {
+    position: absolute;
+    right: 0.3rem;
+    top: 1rem;
+    height: 2.2rem;
+}
+
+.oo-form .ui-form-item .form-item-location p {
+    line-height: 2.4rem;
+    padding-top: 1rem;
+}
+
+.oo-form .ui-form-item .form-item-location .red {
+    color: #ff0000 !important;
+}
+
+.oo-form .ui-form-item .form-item-location .select-num {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    border: 1px solid #f47820;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 3px;
+}
+
+.oo-form .ui-form-item .form-item-location .select-num input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.oo-form .ui-form-item .form-item-location .select-num:last-child {
+    margin-left: 5;
+}
+
+.oo-form .ui-form-item .form-item-location .select-num select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.oo-form.order-blue .ui-form-item .form-item-location p,
+.oo-form.order-blue .ui-form-item input {
+    color: #1c8fe3 !important;
+}
+
+.ui-info {
+    text-align: center;
+    margin: 0;
+    font-size: 0
+}
+
+.ui-info h4[contenteditable] {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+.ui-info h4[contenteditable]+.btn{
+    background-image: none;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+}
+.ui-info h4[contenteditable]+.btn:before{
+    content: '修改';
+    color: #fff;
+    vertical-align: middle;
+}
+.ui-info .btn {
+    background-image: url(../img/icon-edit.png);
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    background-size: cover;
+}

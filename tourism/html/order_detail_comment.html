@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../frozen/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <title>HIU</title>
+    <link rel="stylesheet" type="text/css" href="../css/order.css">
+</head>
+<body>
+    <footer class="ui-footer">
+        <div class="ui-footer-btns">
+            <button type="button" class="btn-footer btn-orange-border">评 价</button>
+        </div>
+    </footer>
+
+    <section class="ui-container">
+        <div class="order-detail">
+            <!-- 景点订单详情的顶部样式 -->
+            <a href="#" class="detail-top-senic ui-arrowlink ui-border">
+                <div class="img" style="background-image:url(../images/demo/demo-senic-1.jpg)"></div>
+                <div class="info">
+                    <div class="time">2016-03-22 18:30</div>
+                    <h4>长风海洋世界</h4>
+                    <p class="ui-nowrap-multi">景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍景点介绍</p>
+                </div>
+            </a>
+
+            <div class="ui-form ui-border">
+                <div class="ui-form-item align-arrow">
+                    <label>订单状态：</label>
+                    <div class="txt-show"><em>已完成</em></div>
+                </div>
+                <div class="ui-form-item align-arrow ui-border-t">
+                    <label>订票时间：</label>
+                    <div class="txt-show">2016年4月22日 12:12:12</div>
+                </div>
+                <div class="ui-form-item align-arrow ui-border-t">
+                    <label>兑票时间：</label>
+                    <div class="txt-show">2016年4月22日 12:12:12</div>
+                </div>
+                <div class="ui-form-item ui-border-t">
+                    <label>票价</label>
+                    <div class="txt-show">88.00元</div>
+                </div>
+                <div class="ui-form-item ui-border-t">
+                    <label>个人支付</label>
+                    <div class="txt-show"><em>78.00元</em></div>
+                </div>
+                <div class="ui-form-item ui-border-t">
+                    <label>代金券支付</label>
+                    <div class="txt-show">88.00元</div>
+                </div>
+            </div>
+
+            <div class="ui-form ui-border">
+                <div class="ui-form-item">
+                    <label>评价：</label>
+                    <div class="ui-comment">
+                        <span class="ui-comment-rate">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="ui-form-item ui-border-t">
+                    <label>评论：</label>
+                    <textarea placeholder="输入评论内容"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../frozen/lib/zeptojs/zepto.min.js"></script>
+    <script src="../frozen/js/frozen.js"></script>
+    <script src="../js/util.js"></script>
+        
+    <script>
+        $('.ui-comment-rate i').click(function(e){
+            var is = $(this).parent().find('i');
+            var index = $(this).index();
+            for (var i = 0; i < is.length; i++) {
+                if (i <= index) {
+                    is.eq(i).addClass('active');
+                } else {
+                    is.eq(i).removeClass('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@import "util.scss";
+
+.ui-footer-navi {
+	border-color: $blue;
+	a.active {
+		color: $blue;
+        &:nth-child(1).active i {
+            background-position: 5px -50px;
+        }
+        &:nth-child(2).active i {
+            background-position: -35px -50px;
+        }
+        &:nth-child(3).active i {
+            background-position: -73px -50px;
+        }
+	}
+}
+
+.taxi-info-card {
+	&:before, &:after {
+		display: none;
+	}
+	.phone {
+		display: block;
+		position: relative;
+		color: $tc2;
+		&:after {
+			content: '';
+			position: absolute;
+			right: 3px;
+			top: 50%;
+			margin-top: -11px;
+			width: 16px;
+			height: 22px;
+			z-index: 2;
+			@extend %bgContain;
+			background-image: url(../images/ic-phone.png);
+		}
+	}
+}
+
+.ui-searchbar-wrap {
+	background-color: $blue;
+	 &.focus {
+	 	.ui-searchbar {
+	 		border-color: $blue;
+	 		.ui-icon-search:before {
+	 			color: $blue;
+	 		}
+	 	}
+	 }
+	 .ui-searchbar-hot ul li.hot {
+	 	color: $blue;
+	 	border-color: $blue;
+	 }
+}
+
+.ui-header {
+	.ui-header-navi {
+		background-color: $blue;
+	}
+}
+.auth-box {
+	.ui-module-info {
+		.extra-options {
+			a {
+				color: $blue;
+				border-color: $blue;
+			}
+		}
+	}
+}

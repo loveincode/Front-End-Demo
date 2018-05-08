@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head可整个提取出来, 引入在head.jsp-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="数道DDO">
+    <meta name="description" content="数道DDO">
+    <title>数道数据驱动运营服务</title>
+    <!--兼容ie8-->
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <!--网页tab ico-->
+    <link rel="shortcut icon" href="../../source/sd-ddo.ico">
+    <link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="../css/animate.min.css?v=4.4.0" rel="stylesheet">
+    <link href="../css/font-awesome.min.css?v=4.7.0" rel="stylesheet">
+    <link href="../css/style.min.css?v=20161216001" rel="stylesheet">
+    <!--公有css style, 后端可统一引入后删除注释-->
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+
+<body class="gray-bg container">
+<div class="steps row mt15">
+    <a class="step" href="#">step1</a>
+    <a class="step step-active">step2</a>
+    <a class="step step-active">step3</a>
+    <a class="step step-active">step4</a>
+    <a class="step step-active">step5</a>
+</div>
+<div class="jumbotron row">
+    <h1>第一步，选择报表模版!</h1>
+    <p>可制作各类报表：易客报表支持多数据源，能够根据一定的规则把不同来源的数据拼装成想要的报表样式和结果。可制作各类填报：支持清单、卡片、主从等填报样式。并且支持分页填报，这对大量数据的填报是很有必要的。
+强大的参数功能：支持各类控件样式的报表参数。参数自动解析功能，造就非常
+灵活的报表应用。优质的Web体验：易客报表与快乐门户绑定，提供美观、便捷的Web操作体验。权限管理：提供类似Windows NT那样的权限机制，安全
+有效。这得益于易客报表绑定的快乐服务器，那是一种先进的知识库体系。分布式管理：易客报表可以将报表模板发布到多个报表服务器上，从而实现服务群
+的模板管理，解决多服务器模板如何一致、维护等的管理问题。 结合淘表网，还可以实现报表模板云备份的服务。</p>
+</div>
+
+<div class="row mt15 template-group white-bg">
+    <!--echarts的图标宽度必须为340px，否则会和新增高度不一致-->
+    <div class="col-md-4 col-sm-4 ">
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sm">
+                <div class="panel-name panel-name-sm">折线图 - 默认</div>
+                <div class="panel-delete panel-check"><i class="fa fa-check-circle"></i></div>
+            </div>
+            <div class="panel-body panel-body-sm">
+                <img src="../../source/image/echarts-demo1.png" alt="echarts-demo1">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 ">
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sm">
+                <div class="panel-name panel-name-sm">柱状图 - 默认</div>
+                <div class="panel-delete panel-check "><i class="fa fa-check-circle"></i></div>
+            </div>
+            <div class="panel-body panel-body-sm">
+                <img src="../../source/image/echarts-demo2.png" alt="echarts-demo2">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 ">
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sm">
+                <div class="panel-name panel-name-sm">饼图 - 默认</div>
+                <div class="panel-delete panel-check "><i class="fa fa-check-circle"></i></div>
+            </div>
+            <div class="panel-body panel-body-sm">
+                <img src="../../source/image/echarts-demo3.png" alt="echarts-demo3">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 ">
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sm">
+                <div class="panel-name panel-name-sm">饼图 - 默认</div>
+                <div class="panel-delete panel-check "><i class="fa fa-check-circle"></i></div>
+            </div>
+            <div class="panel-body panel-body-sm">
+                <img src="../../source/image/echarts-demo3.png" alt="echarts-demo3">
+            </div>
+        </div>
+    </div>
+    <!--加载更多模板-->
+    <div class="col-md-4 col-sm-4">
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sm " style="opacity: 0">
+            </div>
+            <div class="panel-body panel-body-sm panel-box-sm">
+                <span>加载更多</span>
+                <img src="../../source/image/echarts-demo3.png" alt="echarts-demo3" style="opacity: 0">
+            </div>
+        </div>
+        <!--<div class="panel panel-default">-->
+            <!--<div class="panel-body panel-box panel-box-sm" id="loadTemplate">-->
+                <!--<span>加载更多</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 mb30 text-right">
+        <!--<button class="btn btn-primary btn-style">上一步</button>-->
+        <button class="btn btn-primary btn-style nextPage">下一步</button>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<script src="../../source/libs/jquery.min.js"></script>
+<script src="../../source/plugins/layer/layer.js"></script>
+<script src="../../source/libs/echarts.min.js"></script>
+<script src="../js/common.js?v=20161221001"></script>
+<script src="../js/chooseTemplate.js?v=20161210001"></script>
+</body>
+
+</html>

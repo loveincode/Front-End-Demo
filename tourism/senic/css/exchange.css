@@ -1,0 +1,180 @@
+    .check-code {
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 60px;
+    margin-bottom: 22px;
+    padding: 13px 15px;
+}
+.check-code span {
+    float: left;
+    padding: 5px 0;
+    margin-right: 23px;
+    font-size: 24px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.block-input {
+    overflow: hidden;
+    height: 34px;
+    line-height: 34px;
+    width: 326px;
+    position: relative;
+    padding-right: 85px;
+}
+.check-info {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    padding: 0px 10px;
+}
+.submit {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -17px;
+    height: 34px;
+    line-height: 34px;
+    width: 68px;
+    color: #000;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    font-weight: normal;
+}
+.check-table div {
+    vertical-align: top;
+    margin-bottom: 18px;
+}
+.check-table p {
+    display: inline-block;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: -4px;
+    padding: 4px 0px 4px 8px;
+    width: 240px;
+}
+.info {
+    width: 240px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+.b-info {
+    color: #555e71;
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    margin-right: 31px;
+}
+.c-info {
+    color: #555e71;
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    margin-right: 31px;
+    margin-bottom: 18px;
+}
+.btn-block {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.confirm-btn {
+    text-align: center;
+    height: 40px;
+    width: 207px;
+    color: #fff;
+    background-color: #06bf04;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 13px 0 13px 0;
+}
+.disabled input, .confirm-btn[disabled] {
+    background-color: #f0f0f0;
+}
+.electronic-history {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+.electronic-history h2 {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    font-weight: normal;
+    height: 55px;
+    line-height: 55px;
+    padding-left: 32px;
+    font-size: 24px;
+}
+.p-block {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.electronic-history p {
+    font-size: 14px;
+    padding: 12px 5px;
+    line-height: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 0;
+}
+.modal-footer .btn .btn-primary {
+    outline: none;
+}
+.bgc-code {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+/*响应式布局*/
+
+@media (max-width:767px) {
+    .confirm-btn {
+        width: 100%;
+    }
+    #mymodal .modal-dialog {
+        width: 100%;
+        margin: 30% auto;
+    }
+    .check-code {
+        margin-bottom: 0;
+    }
+    .check-table {
+        padding: 0 15px;
+    }
+    .b-info {
+        display: block;
+        text-align: left;
+        padding-left: 5px;
+        margin: 15px 0 8px 0;
+    }
+    .c-info {
+        display: block;
+        text-align: left;
+        padding-left: 5px;
+        margin: 15px 0 8px 0;
+    }
+    .info {
+        width: 100%;
+    }
+    .block-input {
+        width: 100%;
+    }
+    .btn-block {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 15px;
+    }

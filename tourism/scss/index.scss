@@ -1,0 +1,54 @@
+@import "util.scss";
+
+.ui-slider {
+	margin-bottom: 10px;
+	.ui-slider-content {
+		& > li span {
+			background-size: cover;
+			background-position: center;	
+		}
+	}
+}
+
+.senic-list {
+    .ui-grid-halve {
+        padding-top: 0;
+        padding-right: 0;
+        li {
+            padding-right: 10px;
+        }
+    }
+    ul li {
+        .img {
+            width: 100%;
+            padding-top: 55.555%;
+            background-size: cover;
+            background-position: center;
+        }  
+        p {
+            font-size: $ts3;
+            color: $tc1;
+            line-height: 18px;
+            padding: 3px 0;
+        }
+        .price {
+            line-height: 18px;
+            padding: 3px 0;
+            .ori {
+                font-size: $ts4;
+                color: $tc3;
+                text-decoration: line-through;
+            }
+            .cur {
+                float: right;
+                font-size: $ts4;
+                color: $tc1;
+                b {
+                    font-size: $ts1;
+                    vertical-align: top;
+                    margin-right: 1px;
+                }
+            }
+        }
+    }
+}

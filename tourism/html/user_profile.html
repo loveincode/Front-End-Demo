@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../frozen/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <title>HIU</title>
+    <link rel="stylesheet" type="text/css" href="../css/user.css">
+</head>
+<body>
+    <footer class="ui-footer">
+        <div class="ui-footer-btns">
+            <button type="button" class="btn-footer btn-blue">保存</button>
+        </div>
+    </footer>
+
+    <section class="ui-container">
+        <div class="ui-module-info">
+            <form action="#">
+                <div class="ui-form">
+                    <div class="ui-form-item ui-form-item-avatar ui-form-item-link">
+                        <label>头像</label>
+                        <div class="ui-avatar">
+                            <span style="background-image:url(../images/demo/demo-avator-1.jpg)">
+                                <input type="file">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ui-form-item align-arrow ui-border-t">
+                        <label>真实姓名</label>
+                        <input type="text" placeholder="需与证件上的名字一致">
+                    </div>
+                    <div class="ui-form-item ui-form-item-link ui-border-t">
+                        <label>性别</label>
+                        <div class="ui-select" >
+                            <select>
+                                <option disabled selected>未选择</option>
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ui-form-item ui-form-item-link ui-border-t">
+                        <label>出生日期</label>
+                        <input type="date" style="float:right;">
+                    </div>
+                    <div class="ui-form-item ui-form-item-avatar ui-form-item-link ui-border-t">
+                        <label>身份证正面照</label>
+                        <div class="ui-avatar id-card">
+                            <span style="background-image:url(../images/demo/demo-senic-1.jpg)">
+                                <input type="file">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ui-form-item ui-form-item-avatar ui-form-item-link ui-border-t">
+                        <label>身份证背面照</label>
+                        <div class="ui-avatar id-card">
+                            <span style="background-image:url(../images/demo/demo-senic-1.jpg)">
+                                <input type="file">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="../frozen/lib/zeptojs/zepto.min.js"></script>
+    <script src="../frozen/js/frozen.js"></script>
+    <script src="../js/util.js"></script>
+</body>
+</html>

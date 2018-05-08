@@ -1,0 +1,35 @@
+.user-benefit-cards .user-benefit-card, .user-feedback textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.user-top, .user-top .img > span { background-repeat: no-repeat; background-position: center; background-size: cover; }
+
+.user-benefit-cards .user-benefit-card { background-repeat: no-repeat; background-position: center; background-size: contain; }
+
+.user-top { padding: 38px 10px; margin-bottom: 12px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-align: center; -webkit-box-pack: center; background-image: url(../images/bg-user-top.jpg); }
+.user-top .msg { position: absolute; right: 15px; top: 20px; z-index: 2; }
+.user-top .msg > img { width: 33px; vertical-align: top; }
+.user-top .img { width: 76px; height: 76px; margin-bottom: 10px; position: relative; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -webkit-border: 2px solid rgba(255, 255, 255, 0.4); -moz-border: 2px solid rgba(255, 255, 255, 0.4); border: 2px solid rgba(255, 255, 255, 0.4); }
+.user-top .img > span { display: block; width: 100%; height: 100%; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
+.user-top .img .status { position: absolute; text-align: center; width: auto; background-color: #fff; left: 50%; bottom: -1px; z-index: 3; font-size: 12px; color: #5279cd; padding: 0 7px; line-height: 16px; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4); border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; white-space: nowrap; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.user-top .img .status.success { left: auto; right: -5px; }
+.user-top p { line-height: 1em; color: #fff; font-size: 15px; font-weight: bold; letter-spacing: 1px; }
+
+.ui-user-links.ui-list-link > li:after { font-size: 28px; }
+.ui-user-links > li { padding-left: 10px; padding-top: 6px; padding-bottom: 6px; font-size: 15px; color: #666; margin-left: 0; }
+.ui-user-links > li:active { padding-left: 10px; }
+.ui-user-links > li > a { display: -webkit-box; font-size: 15px; color: #666; width: 100%;}
+.ui-user-links .ui-list-thumb-s { margin: 0 12px 0 2px; width: 20px; height: 20px; }
+.ui-user-links .ui-list-thumb-s > span { background-size: contain; background-position: center; }
+
+.user-benefit-cards { padding: 15px 10px; }
+.user-benefit-cards .user-benefit-card { display: block; margin: 0 auto 10px; width: 300px; height: 113px; padding: 0 10px; overflow: hidden; background-image: url(../images/bg-benefit-card.png); }
+.user-benefit-cards .user-benefit-card.vip { background-image: url(../images/bg-benefit-card-vip.png); }
+.user-benefit-cards .user-benefit-card h3 { font-size: 15px; color: #fff; line-height: 34px; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.user-benefit-cards .user-benefit-card h4 { margin-bottom: 2px; font-size: 14px; color: #333; line-height: 20px; }
+.user-benefit-cards .user-benefit-card p { font-size: 12px; color: #666; line-height: 16px; }
+
+.user-feedback { padding: 15px 10px; }
+.user-feedback textarea { -webkit-appearance: none; background-color: #fff; resize: none; display: block; width: 100%; font-size: 14px; color: #333; height: 150px; padding: 10px; border: none; box-shadow: none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.user-feedback textarea::-webkit-input-placeholder { color: #666; }
+.user-feedback textarea::-moz-input-placeholder { color: #666; }
+
+.ui-list-info h4 em { font-size: 12px; margin: 0 8px; letter-spacing: 1px; }

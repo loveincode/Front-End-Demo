@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../frozen/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <title>HIU</title>
+    <link rel="stylesheet" type="text/css" href="../css/order.css">
+</head>
+<body>
+    
+    <section class="ui-container">
+        <div class="order-receiving">
+            <div class="total-top">
+                <img src="../images/ic-horn.png" />
+                在线<em>3.5</em>小时，接单<em>3</em>笔，入账<em>50.00</em>元
+            </div>
+            <div class="order-list">
+                <ul>
+                    <li>
+                        <div class="order-brief">
+                            <div class="time">2016-03-22 18:30</div>
+                            <div class="info">
+                                <h4><img src="../images/ic-locate-green.png" />上海德林木业有限公司</h4>
+                                <h4><img src="../images/ic-locate-orange.png" />上海火车站</h4>
+                            </div>
+                            <div class="total">
+                                <div>
+                                    预约时间：<em>今天18:30</em>
+                                </div>
+                                <button class="btn-transparent">已接单</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="order-brief">
+                            <div class="time">2016-03-22 18:30</div>
+                            <div class="info">
+                                <h4><img src="../images/ic-locate-green.png" />上海德林木业有限公司</h4>
+                                <h4><img src="../images/ic-locate-orange.png" />上海火车站</h4>
+                            </div>
+                            <div class="total">
+                                <div>
+                                    预约时间：<em>明天12:30</em>
+                                </div>
+                                <button class="btn-orange btn-grab-order">接 单</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="order-brief">
+                            <div class="time">2016-03-22 18:30</div>
+                            <div class="info">
+                                <h4><img src="../images/ic-locate-green.png" />上海德林木业有限公司</h4>
+                                <h4><img src="../images/ic-locate-orange.png" />上海火车站</h4>
+                            </div>
+                            <div class="total">
+                                <div>
+                                    预约时间：<em>明天12:30</em>
+                                </div>
+                                <button class="btn-orange btn-grab-order">接 单</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="../frozen/lib/zeptojs/zepto.min.js"></script>
+    <script src="../frozen/js/frozen.js"></script>
+    <script src="../js/util.js"></script>
+
+    <script>
+        $('.order-list').on('click', '.btn-grab-order', function(){
+            var el=$.loading({
+                content:'努力抢单中...',
+            })
+            setTimeout(function(){
+                el.loading("hide");
+
+                // 随机模拟抢单返回后的成功和失败结果
+                if (Math.floor(Math.random()*2) > 0) {
+                    var dia=$.dialog({
+                        content:'恭喜抢单成功！',
+                        button:["关闭", "查看订单"]
+                    });
+                } else {
+                    $.tips({
+                        content:'抢单失败！',
+                        stayTime:2000,
+                        type:"warn"
+                    })
+                }
+            },2000);
+            el.on("loading:hide",function(){
+                console.log("loading hide");
+            });
+        });
+    </script>
+</body>
+</html>

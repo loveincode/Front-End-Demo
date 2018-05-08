@@ -1,0 +1,442 @@
+//all style in this css
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+html,body{
+  height: 100%;
+  padding:0;
+  margin: 0;
+}
+table{
+  font-size: 16px;
+}
+#content-main{
+  background: #e5e5e5;
+}
+.nav .navbar-gray a{
+  background-color: #2c384a;
+  text-align: center;
+  height: 50px;
+}
+.logo img{
+  width: 35px;
+  padding: 10px 4px;
+}
+.mt70{
+  margin-top: 70px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.mtb30{
+  margin:30px 0;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mb30{
+  margin-bottom:30px;
+}
+.mb50{
+  margin-bottom: 50px;
+}
+.pt30{
+  padding-top: 30px;
+}
+.pt10{
+  padding-top: 10px;
+}
+.btn-primary{
+  background-color: #457abc;
+  border: none;
+}
+.btn-style{
+  width: 90px;
+  height: 40px;
+  line-height: 1;
+  font-size: 20px;
+  margin-right: 20px;
+  background-color: #457abc;
+}
+.panel-body{
+  background-color: #f6f9ff;
+  img{
+    width: 100%;
+  }
+}
+//boostrap bgc
+.panel-default>.panel-heading{
+  background-color: #f6f9ff;
+}
+.panel-default{
+  background-color: #f6f9ff;
+  cursor: pointer;
+}
+.panel-default:hover{
+  //transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.04), 0 8px 28px rgba(0, 0, 0, 0.12);
+  transition: all .3s ease-in-out;
+}
+.panel-heading{
+  position: relative;
+  height: 50px;
+}
+.panel-heading-sm{
+  height: 40px;
+}
+.panel-name{
+  position: absolute;
+  top: 0;
+  left: -1px;
+  font-size: 20px;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  width: 190px;
+  display: inline-block;
+  background: linear-gradient(to top, #0897f3, #3aaaff);
+  box-sizing: border-box;
+  border:1px solid #0375c6;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-name-sm{
+  height: 40px;
+  line-height: 40px;
+}
+.panel-delete{
+  position: absolute;
+  right:28px;
+  top: 0;
+  font-size: 18px;
+  color: #139bf6;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+}
+.panel-check{
+  position: absolute;
+  right: 28px;
+  top: 0;
+  font-size: 18px;
+  color: #139bf6;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+.panel-body-sm{
+  padding:10px;
+}
+.panel-box{
+  cursor: pointer;
+  min-height: 420px;
+  position: relative;
+    i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -25px;
+      margin-left: -32px;
+      color: #2da5fc;
+    }
+}
+.panel-box-sm{
+  //min-height: 267px;
+  //box-sizing: border-box;
+  &>span{
+    font-size: 24px;
+    color: #1fa0f8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -24px -48px;
+    cursor: pointer;
+  }
+}
+.template-group{
+  padding-top: 65px;
+}
+.steps{
+  display: flex;
+  background-color: #fff;
+  padding: 0 35px;
+  height: 60px;
+  align-items: center;
+  position: relative;
+  .step{
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    background-color: #0c99f4;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .step-active{
+    background-color: #cecece;
+    cursor: default;
+  }
+  .import-input{
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    background-color: #0c99f4;
+    right: 0;
+    margin-right: 40px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    opacity: .01;
+    &:focus+.import-btn,&:active+.import-btn,&:hover+.import-btn{
+      background-color: #5faee3;
+    }
+  }
+  .import-btn{
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #457abc;
+    right: 0;
+    margin-right: 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+
+  }
+}
+.jumbotron {
+  background-color: #fff;
+  border-radius: 0!important;
+  h1{
+    font-size: 24px;
+    color:#406ba0;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #393939;
+    text-indent: 36px;
+  }
+}
+.load-more{
+  font-size: 24px;
+  color: #1fa0f8;
+  cursor: pointer;
+}
+.data-item{
+  background-color: #e4eef9;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 56px;
+  //cursor: pointer;
+   input{
+     line-height: initial;
+     width: 100%;
+   }
+  div{
+    word-break: break-all;
+  }
+}
+.fa-circle{
+  padding-right: 10px;
+  color: #30a6fd;
+  font-size: 18px;
+}
+.fa-circle-active{
+  color: #fd3057;
+}
+.data-toggle{
+  display: none;
+  ul,li{
+    list-style: none;
+    text-align: center;
+  }
+  li{
+    margin: 0 56px;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    border:1px solid #e5e5e5;
+    border-top:0;
+  }
+  li:first-child{
+    border-top: 0;
+  }
+  li:hover,li:active,li.active{
+    background-color: #ecfbff;
+  }
+}
+.ibox-content{
+  .content{
+    .drop-group{
+      border-bottom:1px dashed #0c99f4;
+     .row{
+       &>div{
+         color: #406ba0;
+         font-size:24px;
+         text-align: center;
+         .drop-itemX,.drop-itemY{
+           text-align: left;
+           height: 100px;
+           background-color: #f6f9ff;
+           overflow-y: scroll;
+           border: 1px solid #e0e7eb;
+           padding: 20px 10px;
+         }
+         .droppable-active{
+           background-color: #ffe;
+         }
+       }
+     } 
+    }
+    &>div{
+      color: #406ba0;
+      font-size:24px;
+      text-align: center;
+      .drop-itemX,.drop-itemY{
+        height: 100px;
+        background-color: #f6f9ff;
+        overflow-y: scroll;
+        border: 1px solid #e0e7eb;
+        padding: 20px 10px;
+      }
+      .droppable-active{
+        background-color: #ffe;
+      }
+    }
+    .box-gruop{
+      color: #406ba0;
+      font-size:24px;
+      text-align: center;
+      .table{
+        th{
+          background-color: #ecfbff;
+          text-align: center;
+        }
+        td{
+          div{
+            max-width: 280px;
+            min-width: 280px;
+            width: 100%;
+            //height: 40px;
+            //line-height: 40px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            cursor: pointer;
+            input{
+              max-width: 280px;
+              min-width: 280px;
+              width: 100%;
+              height: 40px;
+              line-height: 40px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+    .drag-element{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .drag-label{
+        height: 50px;
+        line-height: 50px;
+        width: 120px;
+        margin-right: 28px;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        font-size:20px;
+        margin-bottom: 10px;
+      }
+      .blue-label{
+        background-color: #0c99f4;
+      }
+      .yellow-label{
+        background-color: #f4c00c;
+      }
+      .lightBlue-label{
+        background-color: #5fd0fe;
+      }
+      .lightRed-label{
+        background-color: #ff5c77;
+      }
+      .purple-label{
+        background-color: #949bd1;
+      }
+    }
+  }
+}
+.set-name{
+  background-color: #f6f9ff;
+  border: 1px solid #e0e7eb;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding: 10px;
+}
+.import{
+  padding: 30px 56px;
+  .table{
+    th{
+      text-align: center;
+    }
+    td{
+      .btn:first-child{
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.drag-label{
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  margin-right: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size:20px;
+  margin-bottom: 10px;
+}
+.blue-label{
+  background-color: #0c99f4;
+}
+.yellow-label{
+  background-color: #f4c00c;
+}
+.lightBlue-label{
+  background-color: #5fd0fe;
+}
+.lightRed-label{
+  background-color: #ff5c77;
+}
+.purple-label{
+  background-color: #949bd1;
+}
+.hint-bg{
+  background-color: #fcefa1!important;
+}

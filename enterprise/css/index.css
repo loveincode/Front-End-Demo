@@ -1,0 +1,148 @@
+*{ margin:0; padding: 0; }
+html{ width: 100%; height: 100%;
+    overflow-x: hidden;padding: 0;
+    font-family: "Microsoft YaHei", sans-serif;}
+body{ width: 100%;
+    min-height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;}
+footer{ max-width: 640px;width: 100%; }
+header{ width:100%; height: 40px;line-height: 40px; background-color: #00ADA8;  }
+header p{ color:#ffffff; font-size: 18px; position: absolute; left: 50%; margin-left: -57px;}
+.profile-title{position: absolute; width: 100%;
+    height: 21%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: block;
+    background-color: #00ADA8;}
+.profile-title p{margin-bottom: 10px;color: #ffffff; font-weight:normal;}
+.big-description{ font-size: 32px;width: 230px;position: relative;margin: 0 auto;}
+.big-description p{text-align: right;}
+.mid-description{font-size: 24px;text-align: center;}
+.risk-index{  width: 100%;height: 16%;
+    position:absolute;
+     }
+.risk-index p{ font-size: 18px; color: #ffffff;
+    position: absolute; top:50%; margin-top: -12px; left: 50%; margin-left: -46px;}
+.high-risk-park{ background-color: #0096b6; bottom: 48%;}
+.middle-risk-park{ background-color: #01abcc; bottom: 32%;}
+.low-risk-park{ background-color: #00bcdc; bottom: 16%;}
+.safe-park{ background-color: #8ad9e8; bottom: 0;}
+
+/*business details*/
+.business-details header p{ position: absolute; left: 50%; margin-left:  -36px;}
+header{ display: flex;}
+header a{ display: block; height: 20px; width: 20px; padding: 10px 10px; }
+header a img{ height: 20px; position: absolute;}
+.logo-description{ width: 100%; min-height: 130px; line-height: 130px; background-color: #00ADA8;}
+.logo-description p{ font-size: 16px; color: #ffffff; position: absolute; left: 50%; margin-left: -58px;}
+.business-details section{  margin-top: 10px;}
+.safety-supervision-record{ margin-bottom: 3px; padding: 10px 0;position: relative;
+    background-color: #ffffff;display: flex;
+    align-items: center;
+    justify-content: space-between;}
+.safety-supervision-record time, .safety-supervision-record span{ font-size: 14px; color: #B3B1B2; }
+.safety-supervision-record span{ padding: 0 10px;}
+.safety-supervision-record input{ min-height: 30px;margin-top: 10px; font-size: 14px; color: #ffffff;font-family: "Microsoft YaHei", sans-serif;
+    border:none; border-radius: 5px; padding: 0 10px;}
+/*��ѡ�а�ť��ʽ*/
+.entered{ background-color: #00ADA8;}
+/*δѡ�а�ť��ʽ*/
+.collated{ background-color: #75DDCE;}
+.create-record-btn,.save-btn{  margin-bottom: 40px; padding:0 20px;}
+.create-record-btn input,.save-btn input{ width:100%;height:40px;
+    border:none; border-radius: 5px; background-color: #00ADA8;
+    font-size: 16px; color: #ffffff;font-family: "Microsoft YaHei", sans-serif;}
+
+/*approval-status*/
+.approval-status{min-height: 90px;line-height: 90px;}
+.business-details section{ padding:  0 20px 10px; background-color: #ffffff; margin: 0;}
+.safety-supervision-details p,.enterprise-feedback p{ font-size: 16px; color: #00ADA8; padding: 6px 0;}
+.com-textarea{ width: 100%; min-height: 110px; border: dashed 1px #00ADA8; border-radius:  5px; margin: 6px 0; background-color: #f4f8fb; overflow: hidden;}
+.com-textarea textarea{ min-width: 270px; min-height: 70px; margin: 20px;  font-size: 14px; font-family: "Microsoft YaHei", sans-serif;
+    border: none; outline: none; background-color: #f4f8fb;}
+.com-textarea p{ font-size: 14px; color: #000000; padding: 20px 0 0 20px;}
+.status-btn{ padding: 0 20px;}
+.status-btn input{ width: 100%; height: 40px;margin-bottom:20px;
+    border:none; border-radius: 5px;
+    font-size: 16px; color: #ffffff;font-family: "Microsoft YaHei", sans-serif;}
+.checked-btn input{ background-color: #00ADA8;}
+.rectification-btn input{ background-color: #75DDCE;}
+
+/*enterprise-list*/
+.enterprise-list{ background-color: #ffffff;}
+.enterprise-list section{ padding: 0; background-color: #ffffff; overflow: hidden;}
+.all-enterprise-list-title{ padding: 20px 20px 5px; font-size: 16px; color: #00ADA8; border-bottom: solid 2px #f5f5f5;}
+.all-enterprise-list{ min-height: 40px; padding-left: 35px;  border-bottom: solid 2px #f5f5f5; position: relative;}
+.all-enterprise-list p{ position: absolute; top: 50%; margin-top: -9px;
+    font-size: 14px;color:#000000;}
+
+/* park-list*/
+.search-park{ border-bottom: solid 2px #f5f5f5; padding: 10px 30px;}
+.search-box{ border-radius: 5px; background-color: #00ADA8; height: 24px; padding: 8px 20px; display: flex; position: relative;}
+.search-box img{ height: 20px; position: absolute; top: 50%; margin-top: -10px;}
+.search-box input{ width: 100%; height: 100%; margin-left: 30px; border: none; outline: none; background-color: #00ADA8;
+    font-size: 14px;  font-family: "Microsoft YaHei", sans-serif; color: #ffffff;}
+.search-box input::-webkit-input-placeholder{ color:#ffffff;}
+.search-box input:-moz-placeholder{ color: #ffffff;}
+.search-box input::-moz-placeholder{ color: #ffffff;}
+.search-park input:-ms-input-placeholder{ color: #ffffff;}
+
+/* enterprise-info*/
+.enterprise-info{ background-color: #f5f5f5;}
+.chart-show-info{ padding: 20px 20px 10px; background-color: #ffffff;}
+.chart-show{ min-height: 210px;}
+.enterprise-info section{ padding: 30px 20px; margin-top: 10px;}
+.check-record-title{ font-size: 16px; margin-bottom: 10px;}
+.check-record{ font-size: 14px; margin: 10px auto; display: flex; align-items: center;}
+.check-record time,.check-record span{ margin-right: 10px;}
+/*��鿴*/
+.pending{ color: #ff7b7b;}
+/*�����*/
+.rectification{ color: #f8b64a;}
+/*�����*/
+.checking{ color: #cfc240;}
+/*��ͨ��*/
+.passed{ color: #4bbfb5;}
+/*���δͨ��*/
+.audit-failed{ color: #d30920;}
+.safety-supervision-register{padding: 0 20px;  }
+.safety-supervision-register input{ width: 100%;height: 40px; border: none; background: none;
+    background-color: #00ADA8;margin-bottom: 20px;border-radius: 5px;
+    font-size: 16px; color: #ffffff;font-family: "Microsoft YaHei", sans-serif;}
+
+/* park-info*/
+.park-info{padding: 0;position: relative;}
+.park-info section{ padding: 10px 20px;}
+.park-info-show{ padding: 20px 20px 0; background-color: #ffffff;}
+.park-info-show p{ font-size: 14px; color: #00ADA8; }
+.park-info-chart{ min-height: 150px; }
+.trend-analysis{min-height: 250px;padding: 10px 0;}
+.safety-supervision-enterprise-list{ min-height: 40px;line-height: 40px;
+    display: flex;  }
+.safety-supervision-enterprise-list p{font-size: 16px;color: #00ADA8;width: 50%;}
+.safety-supervision-enterprise-list select{
+    width: 50%;background-color: transparent;border:none;outline: none;
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background-image: url("../imgs/down.png");background-repeat:no-repeat;
+    background-size:25px 25px;background-position:100% 7px;
+    font-size: 14px;color: #000000;font-family: "Microsoft YaHei", sans-serif;
+}
+.enterprises-selected{ min-height: 40px; border-bottom: solid 2px #f5f5f5; position: relative;}
+.enterprises-selected p{ position: absolute; top: 50%; margin-top: -9px;
+    font-size: 14px;color:#000000;}
+.show-all-enterprise{padding: 0 20px;}
+.show-all-enterprise input{ width:100%;height:40px;
+    border:none; border-radius: 5px; background-color: #00ADA8;
+    font-size: 16px; color: #ffffff;font-family: "Microsoft YaHei", sans-serif;}
+.high-temperature-warning{height: 40px;width: 100%;margin-top: 10px;
+    background-color: #ffde97;line-height: 40px; text-align: center;}
+.high-temperature-warning p{ color: #a66605;}
